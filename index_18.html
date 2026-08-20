@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <base href="./">
 <title>全部款式 · 第 18 页 - AIF Sports</title>
-<style>/* gallery site base */
+<style>/* gallery site v2 base */
 :root{--bg:#f6f7f9;--card:#fff;--line:#e8eaee;--txt:#1c2333;--sub:#6b7280;--accent:#25d366}
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"PingFang SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--txt)}
@@ -20,10 +20,15 @@ a{text-decoration:none;color:inherit}
 .catebar{position:sticky;top:57px;z-index:49;background:#fff;border-bottom:1px solid var(--line);padding:8px 20px;display:none}
 .catebar select{width:100%;padding:9px 12px;border:1px solid var(--line);border-radius:10px;font-size:14px;background:#fff;color:var(--txt);outline:none;-webkit-appearance:none;appearance:none}
 .wrap{display:flex;max-width:1440px;margin:0 auto}
-.sidebar{width:220px;flex-shrink:0;padding:16px 10px 40px;position:sticky;top:57px;height:calc(100vh - 57px);overflow-y:auto}
-.sidebar .cate{display:block;padding:9px 12px;border-radius:8px;font-size:13.5px;color:var(--sub);margin-bottom:2px;transition:.15s}
+.sidebar{width:230px;flex-shrink:0;padding:12px 10px 40px;position:sticky;top:57px;height:calc(100vh - 57px);overflow-y:auto}
+.sidebar .grp{display:block;font-size:11.5px;font-weight:700;color:#9aa1ad;padding:13px 12px 3px;letter-spacing:.5px;cursor:pointer}
+.sidebar .grp:hover{color:var(--accent)}
+.sidebar .grp.active{color:var(--accent)}
 .sidebar .cate:hover{background:#eef1f5;color:var(--txt)}
 .sidebar .cate.active{background:var(--accent);color:#fff;font-weight:600}
+.sidebar .cate.sub{padding-left:22px;font-size:12.5px}
+.sidebar .cate.sub.active{background:var(--accent);color:#fff}
+.sidebar .grp.active{color:var(--accent)}
 .main{flex:1;min-width:0;padding:16px 20px 60px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}
 .res{display:none}
@@ -64,465 +69,465 @@ a{text-decoration:none;color:inherit}
 <body>
 <div class="topbar">
   <h1><span class="brand">AIF Sports</span> · 选品图集</h1>
-  <div class="search"><input id="q" placeholder="搜索 货号 / 款式 / 颜色..."><span class="badge">2667 款</span></div>
+  <div class="search"><input id="q" placeholder="搜索 货号 / 款式 / 颜色..."><span class="badge">38897 款</span></div>
 </div>
-<nav class="catebar"><select id="cateSel" onchange="location.href=this.value"><option value="index.html" selected>全部款式 (2667)</option><option value="gallery/98767ea77cbe54c1208d858f6f59345c4276ae20.html">顶级精品 超软头层皮 软底原标 至尊版本 (320)</option><option value="gallery/539a5e958d1d58f3593433352d3435.html">厚底贝壳头35-45 (49)</option><option value="gallery/5fb78bad202053414d4241.html">德训  SAMBA (160)</option><option value="gallery/414a314f4e5e2e209ad85c14592b207cfb521720.html">AJ1低帮 高尔夫 系列 纯原头层原厂皮 内置真Sole气垫  36-46 (231)</option><option value="gallery/534c373250726f.html">SL72Pro (16)</option><option value="gallery/5052205346544d2d303036.html">PR SFTM-006 (3)</option><option value="gallery/47686f737420537072696e74.html">Ghost Sprint (4)</option><option value="gallery/41442053f25bc665af.html">AD 史密斯 (9)</option><option value="gallery/53616d626120526f7365205768515df47cfb5217.html">Samba Rose W桑巴系列松糕 (6)</option><option value="gallery/4d4c425b66957f.html">MLB学长 (18)</option><option value="gallery/73616d6261206d756c65534a62d6.html">samba mule半拖 (8)</option><option value="gallery/738b9e6468e3206a656e6e6965540c6b3e5fb78b.html">王鹤棣 jennie同款德训鞋 (4)</option><option value="gallery/6e696b6520521d4ee367084eae978b.html">nike 初代月亮鞋 (12)</option><option value="gallery/4f6e66028dd1207cfb52172096c6540856fe.html">On昂跑 系列 集合图 (24)</option><option value="gallery/682156ed6f6f7359345c42732a5df49762530597.html">校园oos头层猪巴面包鞋 (31)</option><option value="gallery/616469646173204859504552424f4f5354.html">adidas HYPERBOOST (12)</option><option value="gallery/616469646173204859504552424f4f53542032.html">adidas HYPERBOOST 2 (13)</option><option value="gallery/616469646173204859504552424f4f5354204154.html">adidas HYPERBOOST ATR (8)</option><option value="gallery/4c56205e7f8d277cfb5217.html">LV 广货系列 (9)</option><option value="gallery/4e54344f4e5e2e.html">乔4低帮 (50)</option><option value="gallery/564c20434f55525420322e30205fb78bad978b.html">VL COURT 2.0 德训鞋 (15)</option><option value="gallery/5df4674e4e165bb6207cfb52172096c6540856fe.html">巴李世家 系列 集合图 微商相册有实拍 (11)</option><option value="gallery/7a7a519b7cfb5217.html">空军系列 (77)</option><option value="gallery/8dc662f390537cfb5217.html">跆拳道系列 (20)</option><option value="gallery/6ce258eb987f7cfb52178dd1978b.html">波士顿系列跑鞋 (8)</option><option value="gallery/4e42204d544d3130.html">NB MTM10 (9)</option><option value="gallery/414a344ee320516859345c42771f76ae33362d34.html">AJ4代 全头层真皮36-47 (22)</option><option value="gallery/414a334ee32059345c4276ae7248672c.html">AJ3代 头层皮版本 (23)</option><option value="gallery/4e9a745f58eb208dd1978b205404207cfb5217.html">亚瑟士 跑鞋 各 系列 (5)</option><option value="gallery/563520524e52.html">V5 RNR (20)</option><option value="gallery/69305b50353030.html">椰子500 (10)</option><option value="gallery/534c3732.html">SL72 (18)</option><option value="gallery/4e423533307cfb5217.html">NB530系列 (22)</option><option value="gallery/53427cfb5217207eaf539f59345c42539f538276.html">SB系列 纯原头层原厂皮 内置真Sole气垫 Dunk 系列 (199)</option><option value="gallery/4eff59345c4276ae2f207eaf539f54c18d28206c.html">仿头层皮/ 纯原品质 永不断货！ (10)</option><option value="gallery/5036303030.html">P6000 (5)</option><option value="gallery/7eaf539f20365c427ec454085e95204e42323030.html">纯原 6层组合底 NB2002R-1906R (48)</option><option value="gallery/33353069305b507cfb52172098767ea75df465af.html">350椰子系列 顶级巴斯夫 !36-47 ! (41)</option><option value="gallery/41642053616d626120566567616e20963f8fea4e.html">Ad Samba Vegan 阿迪三叶草休闲厚底 36-45板鞋 (8)</option><option value="gallery/4e4235373430.html">NB5740 (11)</option><option value="gallery/6d1e6d1e978b2069305b5062d6978b2020ff1a33.html">洞洞鞋 椰子拖鞋  ：35-48 (15)</option><option value="gallery/4e423332377cfb5217.html">NB327系列 (26)</option><option value="gallery/4e42353734.html">NB574 (19)</option><option value="gallery/767b6708466c793520539f76d22051686c1457ab.html">登月Fly5 原盒 全气垫 (8)</option><option value="gallery/5a4f4f4d582d52554e332098de7ec77cfb521720.html">ZOOMX-RUN3 飞织系列 原盒全气垫 (6)</option><option value="gallery/56324b204d324b202080017239978b7cfb5217.html">V2K M2K  老爹鞋系列 (44)</option><option value="gallery/534e592b324ee3334ee3516859345c42205f9772.html">华夫2代3代全头层 得物芯片版本  五层组合底 (21)</option><option value="gallery/4d4c42207cfb5217.html">MLB 系列 (13)</option><option value="gallery/4e42393036302059345c42732a5df4208dd1978b.html">NB9060 头层猪巴 跑鞋 (2)</option><option value="gallery/67005f3a724820414a20333132204e0954084e00.html">最强版 AJ 312 三合一低帮 (53)</option><option value="gallery/9ca89c7c97625305978b33362d3435.html">鲨鱼面包鞋36-45 (31)</option><option value="gallery/39375b505f39593420516c53f87ea77cfb5217.html">97子弹头 公司级系列 (86)</option><option value="gallery/414a319ad85e2e2059345c425c0f86ee8170207e.html">AJ1高帮 头层小蛮腰 纯原顶级版本！更多配色不断更新上架！ (109)</option><option value="gallery/7eaf539f204e423939322d3939332d3939307633.html">纯原 NB992-993-990v3-990v5 (15)</option><option value="gallery/414a31204e2d90a67cfb52172059345c4276ae51.html">AJ1 中邦系列 头层皮公司货36-46 (48)</option><option value="gallery/9ea666065c0f767d978b2082af7247611f5e9472.html">麦昆小白鞋 芯片感应版本 ALEXANDER MCQUEEN 经典皮尾增高厚底男女款运动鞋 (13)</option><option value="gallery/53e49a70ff01810f810f978b2020516859345c42.html">古驰！脏脏鞋  全头层 芯片感应版本 (23)</option><option value="gallery/69305b5037303056312056322056337cfb5217.html">椰子700V1 V2 V3系列 (3)</option><option value="gallery/535a9e1f2042976220449e45.html">SZ鸟 B面 D鹅 (16)</option><option value="gallery/963f751820771f6807208dd1978b.html">阿甘 真标 跑鞋 (95)</option><option value="gallery/554747204f4e4e2d9ad85e2e2062d6978b20424b.html">UGG 低中高帮 拖鞋 BK博肯拖鞋 (206)</option><option value="gallery/534d494c4552455055424c494320677e7cd5539a.html">SMILEREPUBLIC 松糕厚底增高低帮 (8)</option><option value="gallery/4e09539f5eb788d5.html">三原康裕 (5)</option><option value="gallery/68465a01436f6e76657273657cfb52172053cc56.html">框威Converse系列 双围条蓝底 纯原顶级版本 原装工艺盒 可当正品 (26)</option><option value="gallery/5f0062d380054f4e5e2e.html">开拓者低帮 (16)</option><option value="gallery/7ae5978b.html">童鞋 (189)</option><option value="gallery/672a52067c7b76f8518c.html">未分类相册 (2)</option></select></nav>
+<nav class="catebar"><select id="cateSel" onchange="location.href=this.value"><option value="index.html">全部款式</option><optgroup label="鞋类"><option value="gallery/978b7c7b_72794ef7b78dd16b652f4f1195f2.html">&nbsp;&nbsp;特价·跑步/休闲 (2614)</option><option value="gallery/978b7c7b_4e696b652041697220466f726365.html">&nbsp;&nbsp;Nike Air Force (2585)</option><option value="gallery/978b7c7b_416469646173.html">&nbsp;&nbsp;Adidas (2291)</option><option value="gallery/978b7c7b_72794ef7b7416469646173.html">&nbsp;&nbsp;特价·Adidas (2228)</option><option value="gallery/978b7c7b_416972204a6f7264616e.html">&nbsp;&nbsp;Air Jordan (1943)</option><option value="gallery/978b7c7b_72794ef7b74e696b65.html">&nbsp;&nbsp;特价·Nike (1915)</option><option value="gallery/978b7c7b_4e696b652051764ed6.html">&nbsp;&nbsp;Nike 其他 (1717)</option><option value="gallery/978b7c7b_72794ef7b74e9a745f58eb.html">&nbsp;&nbsp;特价·亚瑟士 (1252)</option><option value="gallery/978b7c7b_72794ef7b74e696b652041697220466f726365.html">&nbsp;&nbsp;特价·Nike Air Force (1091)</option><option value="gallery/978b7c7b_4e696b652044756e6b.html">&nbsp;&nbsp;Nike Dunk (993)</option><option value="gallery/978b7c7b_72794ef7b7416972204a6f7264616e.html">&nbsp;&nbsp;特价·Air Jordan (751)</option><option value="gallery/978b7c7b_72794ef7b759624f8854c1724c.html">&nbsp;&nbsp;特价·奢侈品牌 (714)</option><option value="gallery/978b7c7b_8db37403978b.html">&nbsp;&nbsp;足球鞋 (658)</option><option value="gallery/978b7c7b_72794ef7b751764ed6.html">&nbsp;&nbsp;特价·其他 (600)</option><option value="gallery/978b7c7b_72794ef7b74e696b652044756e6b.html">&nbsp;&nbsp;特价·Nike Dunk (586)</option><option value="gallery/978b7c7b_414a207cfb5217.html">&nbsp;&nbsp;AJ 系列 (569)</option><option value="gallery/978b7c7b_8dd16b65978b.html">&nbsp;&nbsp;跑步鞋 (550)</option><option value="gallery/978b7c7b_72794ef7b766028dd1.html">&nbsp;&nbsp;特价·昂跑 (442)</option><option value="gallery/978b7c7b_523a5ba2204d657263757269616c.html">&nbsp;&nbsp;刺客 Mercurial (425)</option><option value="gallery/978b7c7b_72794ef7b74e65772042616c616e6365.html">&nbsp;&nbsp;特价·New Balance (417)</option><option value="gallery/978b7c7b_4e65772042616c616e6365.html">&nbsp;&nbsp;New Balance (395)</option><option value="gallery/978b7c7b_486f6b61.html">&nbsp;&nbsp;Hoka (380)</option><option value="gallery/978b7c7b_4e9a745f58eb.html">&nbsp;&nbsp;亚瑟士 (333)</option><option value="gallery/978b7c7b_53215a012f4e0765af.html">&nbsp;&nbsp;匡威/万斯 (330)</option><option value="gallery/978b7c7b_5df49ece4e165bb6.html">&nbsp;&nbsp;巴黎世家 (325)</option><option value="gallery/978b7c7b_84287f5784992f8d8a91ce.html">&nbsp;&nbsp;萨罗蒙/越野 (301)</option><option value="gallery/978b7c7b_8d1d58f35934.html">&nbsp;&nbsp;贝壳头 (300)</option><option value="gallery/978b7c7b_72794ef7b762d6978b.html">&nbsp;&nbsp;特价·拖鞋 (290)</option><option value="gallery/978b7c7b_5fb78bad2f53414d4241.html">&nbsp;&nbsp;德训/SAMBA (243)</option><option value="gallery/978b7c7b_44756e6b2f5342.html">&nbsp;&nbsp;Dunk/SB (234)</option><option value="gallery/978b7c7b_65904e502046696c61.html">&nbsp;&nbsp;斐乐 Fila (228)</option><option value="gallery/978b7c7b_5547472f535a80af.html">&nbsp;&nbsp;UGG/博肯 (221)</option><option value="gallery/978b7c7b_4d4c42.html">&nbsp;&nbsp;MLB (211)</option><option value="gallery/978b7c7b_7ae5978b.html">&nbsp;&nbsp;童鞋 (192)</option><option value="gallery/978b7c7b_65f65c1a2f4f1195f2677f978b.html">&nbsp;&nbsp;时尚/休闲板鞋 (155)</option><option value="gallery/978b7c7b_4758205068616e746f6d.html">&nbsp;&nbsp;GX Phantom (129)</option><option value="gallery/978b7c7b_4775636369.html">&nbsp;&nbsp;Gucci (109)</option><option value="gallery/978b7c7b_65f65c1a8bbe8ba15e08.html">&nbsp;&nbsp;时尚设计师 (106)</option><option value="gallery/978b7c7b_5f6a9a6c.html">&nbsp;&nbsp;彪马 (105)</option><option value="gallery/978b7c7b_730e9e70205072656461746f72.html">&nbsp;&nbsp;猎鹰 Predator (91)</option><option value="gallery/978b7c7b_69305b50205965657a79.html">&nbsp;&nbsp;椰子 Yeezy (79)</option><option value="gallery/978b7c7b_7a7a519b7cfb5217.html">&nbsp;&nbsp;空军系列 (79)</option><option value="gallery/978b7c7b_5de588c59774.html">&nbsp;&nbsp;工装靴 (76)</option><option value="gallery/978b7c7b_59624f8854c1724c978b.html">&nbsp;&nbsp;奢侈品牌鞋 (76)</option><option value="gallery/978b7c7b_53179762.html">&nbsp;&nbsp;北面 (75)</option><option value="gallery/978b7c7b_98767ea77cbe54c1.html">&nbsp;&nbsp;顶级精品 (72)</option><option value="gallery/978b7c7b_8fd052a84f1195f2978b.html">&nbsp;&nbsp;运动休闲鞋 (71)</option><option value="gallery/978b7c7b_51764ed68db37403978b.html">&nbsp;&nbsp;其他足球鞋 (67)</option><option value="gallery/978b7c7b_62d6978b2f6d1e6d1e978b.html">&nbsp;&nbsp;拖鞋/洞洞鞋 (47)</option><option value="gallery/978b7c7b_4f205947205469656d706f.html">&nbsp;&nbsp;传奇 Tiempo (37)</option><option value="gallery/978b7c7b_463530.html">&nbsp;&nbsp;F50 (34)</option><option value="gallery/978b7c7b_97625305978b.html">&nbsp;&nbsp;面包鞋 (31)</option><option value="gallery/978b7c7b_5965657a79.html">&nbsp;&nbsp;Yeezy (30)</option><option value="gallery/978b7c7b_733f4eba59342042415045.html">&nbsp;&nbsp;猿人头 BAPE (19)</option><option value="gallery/978b7c7b_51764ed6.html">&nbsp;&nbsp;其他 (12)</option><option value="gallery/978b7c7b_554747.html">&nbsp;&nbsp;UGG (5)</option><option value="gallery/978b7c7b_72794ef7b77ae5978b.html">&nbsp;&nbsp;特价·童鞋 (3)</option></optgroup><optgroup label="球衣"><option value="gallery/74038863_4e42412074038863.html">&nbsp;&nbsp;NBA 球衣 (3056)</option><option value="gallery/74038863_5df4753280548d5b.html">&nbsp;&nbsp;巴甲联赛 (447)</option><option value="gallery/74038863_4e42412070ed538b.html">&nbsp;&nbsp;NBA 热压 (382)</option><option value="gallery/74038863_8d5b5b637cfb5217.html">&nbsp;&nbsp;赛季系列 (367)</option><option value="gallery/74038863_4e42412051764ed67403961f.html">&nbsp;&nbsp;NBA 其他球队 (350)</option><option value="gallery/74038863_65b08d5b5b63.html">&nbsp;&nbsp;新赛季 (311)</option><option value="gallery/74038863_4e424120740388e4.html">&nbsp;&nbsp;NBA 球裤 (212)</option><option value="gallery/74038863_32303236204e16754c676f.html">&nbsp;&nbsp;2026 世界杯 (190)</option><option value="gallery/74038863_8054540db7590d53e4.html">&nbsp;&nbsp;联名·复古 (182)</option><option value="gallery/74038863_57ce5e027248b77279522b7248.html">&nbsp;&nbsp;城市版·特别版 (126)</option><option value="gallery/74038863_610f7532.html">&nbsp;&nbsp;意甲 (112)</option><option value="gallery/74038863_4e464c2074038863.html">&nbsp;&nbsp;NFL 球衣 (82)</option><option value="gallery/74038863_6e564eba961f.html">&nbsp;&nbsp;湖人队 (68)</option><option value="gallery/74038863_4d4c422074038863.html">&nbsp;&nbsp;MLB 球衣 (66)</option><option value="gallery/74038863_5fb77532.html">&nbsp;&nbsp;德甲 (56)</option><option value="gallery/74038863_667a52297532.html">&nbsp;&nbsp;智利甲 (52)</option><option value="gallery/74038863_516c725b961f.html">&nbsp;&nbsp;公牛队 (50)</option><option value="gallery/74038863_83777532.html">&nbsp;&nbsp;荷甲 (50)</option><option value="gallery/74038863_56fd5bb6961f.html">&nbsp;&nbsp;国家队 (46)</option><option value="gallery/74038863_82f18d85.html">&nbsp;&nbsp;英超 (44)</option><option value="gallery/74038863_740354587248.html">&nbsp;&nbsp;球员版 (39)</option><option value="gallery/74038863_74038863b751764ed6.html">&nbsp;&nbsp;球衣·其他 (38)</option><option value="gallery/74038863_590d53e4.html">&nbsp;&nbsp;复古 (37)</option><option value="gallery/74038863_4e42412059736b3e.html">&nbsp;&nbsp;NBA 女款 (35)</option><option value="gallery/74038863_4e464c2075376b3e.html">&nbsp;&nbsp;NFL 男款 (34)</option><option value="gallery/74038863_4e464c2059736b3e.html">&nbsp;&nbsp;NFL 女款 (34)</option><option value="gallery/74038863_5168660e661fb756fd5bb6961f.html">&nbsp;&nbsp;全明星·国家队 (32)</option><option value="gallery/74038863_963f7532.html">&nbsp;&nbsp;阿甲 (32)</option><option value="gallery/74038863_59736b3e.html">&nbsp;&nbsp;女款 (32)</option><option value="gallery/74038863_4e464c2070ed538b.html">&nbsp;&nbsp;NFL 热压 (19)</option><option value="gallery/74038863_70ed706b961f.html">&nbsp;&nbsp;热火队 (16)</option><option value="gallery/74038863_7f8e804c8054.html">&nbsp;&nbsp;美职联 (15)</option><option value="gallery/74038863_4e464c2052a059277801.html">&nbsp;&nbsp;NFL 加大码 (12)</option><option value="gallery/74038863_8fd052a84e0a8863.html">&nbsp;&nbsp;运动上衣 (9)</option><option value="gallery/74038863_7cbe90096b3e.html">&nbsp;&nbsp;精选款 (8)</option><option value="gallery/74038863_897f7532.html">&nbsp;&nbsp;西甲 (4)</option><option value="gallery/74038863_6cd57532.html">&nbsp;&nbsp;法甲 (2)</option><option value="gallery/74038863_7ae588c574038863.html">&nbsp;&nbsp;童装球衣 (1)</option></optgroup><optgroup label="球裤"><option value="gallery/740388e4_53e3888b88e4.html">&nbsp;&nbsp;口袋裤 (253)</option><option value="gallery/740388e4_4e424120740388e4.html">&nbsp;&nbsp;NBA 球裤 (14)</option><option value="gallery/740388e4_4e464c20740388e4.html">&nbsp;&nbsp;NFL 球裤 (13)</option></optgroup><optgroup label="服装"><option value="gallery/670d88c5_957f88968bad7ec3670d.html">&nbsp;&nbsp;长袖训练服 (283)</option><option value="gallery/670d88c5_77ed88968bad7ec3670d.html">&nbsp;&nbsp;短袖训练服 (242)</option><option value="gallery/670d88c5_5939514b59165957.html">&nbsp;&nbsp;夹克外套 (227)</option><option value="gallery/670d88c5_80cc5fc3.html">&nbsp;&nbsp;背心 (186)</option><option value="gallery/670d88c5_536b8863b751764ed6.html">&nbsp;&nbsp;卫衣·其他 (146)</option><option value="gallery/670d88c5_504f4c4f20886b.html">&nbsp;&nbsp;POLO 衫 (131)</option><option value="gallery/670d88c5_5e3d886b536b8863.html">&nbsp;&nbsp;帽衫卫衣 (112)</option><option value="gallery/670d88c5_74038ff754688fb9.html">&nbsp;&nbsp;球迷周边 (87)</option><option value="gallery/670d88c5_74038ff72054206064.html">&nbsp;&nbsp;球迷 T 恤 (38)</option><option value="gallery/670d88c5_98ce8863.html">&nbsp;&nbsp;风衣 (16)</option><option value="gallery/670d88c5_536b8863.html">&nbsp;&nbsp;卫衣 (7)</option></optgroup><optgroup label="包类"><option value="gallery/53057c7b_51764ed654c1724c.html">&nbsp;&nbsp;其他品牌 (29)</option><option value="gallery/53057c7b_4c56.html">&nbsp;&nbsp;LV (22)</option><option value="gallery/53057c7b_4755434349.html">&nbsp;&nbsp;GUCCI (11)</option><option value="gallery/53057c7b_4348414e454c.html">&nbsp;&nbsp;CHANEL (8)</option><option value="gallery/53057c7b_59534c.html">&nbsp;&nbsp;YSL (6)</option><option value="gallery/53057c7b_44494f52.html">&nbsp;&nbsp;DIOR (6)</option><option value="gallery/53057c7b_51764ed6.html">&nbsp;&nbsp;其他 (3)</option></optgroup><optgroup label="童装童鞋"><option value="gallery/7ae588c57ae5978b_7ae588c5.html">&nbsp;&nbsp;童装 (343)</option><option value="gallery/7ae588c57ae5978b_4e4241207ae588c5.html">&nbsp;&nbsp;NBA 童装 (174)</option><option value="gallery/7ae588c57ae5978b_7ae588c574038863.html">&nbsp;&nbsp;童装球衣 (60)</option></optgroup></select></nav>
 <div class="wrap">
-  <nav class="sidebar"><a class="cate active" href="index.html">全部款式 <span style="opacity:.6">(2667)</span></a><a class="cate" href="gallery/98767ea77cbe54c1208d858f6f59345c4276ae20.html">顶级精品 超软头层皮 软底原标 至尊版本 <span style="opacity:.6">(320)</span></a><a class="cate" href="gallery/539a5e958d1d58f3593433352d3435.html">厚底贝壳头35-45 <span style="opacity:.6">(49)</span></a><a class="cate" href="gallery/5fb78bad202053414d4241.html">德训  SAMBA <span style="opacity:.6">(160)</span></a><a class="cate" href="gallery/414a314f4e5e2e209ad85c14592b207cfb521720.html">AJ1低帮 高尔夫 系列 纯原头层原厂皮 内置真Sole气垫  36-46 <span style="opacity:.6">(231)</span></a><a class="cate" href="gallery/534c373250726f.html">SL72Pro <span style="opacity:.6">(16)</span></a><a class="cate" href="gallery/5052205346544d2d303036.html">PR SFTM-006 <span style="opacity:.6">(3)</span></a><a class="cate" href="gallery/47686f737420537072696e74.html">Ghost Sprint <span style="opacity:.6">(4)</span></a><a class="cate" href="gallery/41442053f25bc665af.html">AD 史密斯 <span style="opacity:.6">(9)</span></a><a class="cate" href="gallery/53616d626120526f7365205768515df47cfb5217.html">Samba Rose W桑巴系列松糕 <span style="opacity:.6">(6)</span></a><a class="cate" href="gallery/4d4c425b66957f.html">MLB学长 <span style="opacity:.6">(18)</span></a><a class="cate" href="gallery/73616d6261206d756c65534a62d6.html">samba mule半拖 <span style="opacity:.6">(8)</span></a><a class="cate" href="gallery/738b9e6468e3206a656e6e6965540c6b3e5fb78b.html">王鹤棣 jennie同款德训鞋 <span style="opacity:.6">(4)</span></a><a class="cate" href="gallery/6e696b6520521d4ee367084eae978b.html">nike 初代月亮鞋 <span style="opacity:.6">(12)</span></a><a class="cate" href="gallery/4f6e66028dd1207cfb52172096c6540856fe.html">On昂跑 系列 集合图 <span style="opacity:.6">(24)</span></a><a class="cate" href="gallery/682156ed6f6f7359345c42732a5df49762530597.html">校园oos头层猪巴面包鞋 <span style="opacity:.6">(31)</span></a><a class="cate" href="gallery/616469646173204859504552424f4f5354.html">adidas HYPERBOOST <span style="opacity:.6">(12)</span></a><a class="cate" href="gallery/616469646173204859504552424f4f53542032.html">adidas HYPERBOOST 2 <span style="opacity:.6">(13)</span></a><a class="cate" href="gallery/616469646173204859504552424f4f5354204154.html">adidas HYPERBOOST ATR <span style="opacity:.6">(8)</span></a><a class="cate" href="gallery/4c56205e7f8d277cfb5217.html">LV 广货系列 <span style="opacity:.6">(9)</span></a><a class="cate" href="gallery/4e54344f4e5e2e.html">乔4低帮 <span style="opacity:.6">(50)</span></a><a class="cate" href="gallery/564c20434f55525420322e30205fb78bad978b.html">VL COURT 2.0 德训鞋 <span style="opacity:.6">(15)</span></a><a class="cate" href="gallery/5df4674e4e165bb6207cfb52172096c6540856fe.html">巴李世家 系列 集合图 微商相册有实拍 <span style="opacity:.6">(11)</span></a><a class="cate" href="gallery/7a7a519b7cfb5217.html">空军系列 <span style="opacity:.6">(77)</span></a><a class="cate" href="gallery/8dc662f390537cfb5217.html">跆拳道系列 <span style="opacity:.6">(20)</span></a><a class="cate" href="gallery/6ce258eb987f7cfb52178dd1978b.html">波士顿系列跑鞋 <span style="opacity:.6">(8)</span></a><a class="cate" href="gallery/4e42204d544d3130.html">NB MTM10 <span style="opacity:.6">(9)</span></a><a class="cate" href="gallery/414a344ee320516859345c42771f76ae33362d34.html">AJ4代 全头层真皮36-47 <span style="opacity:.6">(22)</span></a><a class="cate" href="gallery/414a334ee32059345c4276ae7248672c.html">AJ3代 头层皮版本 <span style="opacity:.6">(23)</span></a><a class="cate" href="gallery/4e9a745f58eb208dd1978b205404207cfb5217.html">亚瑟士 跑鞋 各 系列 <span style="opacity:.6">(5)</span></a><a class="cate" href="gallery/563520524e52.html">V5 RNR <span style="opacity:.6">(20)</span></a><a class="cate" href="gallery/69305b50353030.html">椰子500 <span style="opacity:.6">(10)</span></a><a class="cate" href="gallery/534c3732.html">SL72 <span style="opacity:.6">(18)</span></a><a class="cate" href="gallery/4e423533307cfb5217.html">NB530系列 <span style="opacity:.6">(22)</span></a><a class="cate" href="gallery/53427cfb5217207eaf539f59345c42539f538276.html">SB系列 纯原头层原厂皮 内置真Sole气垫 Dunk 系列 <span style="opacity:.6">(199)</span></a><a class="cate" href="gallery/4eff59345c4276ae2f207eaf539f54c18d28206c.html">仿头层皮/ 纯原品质 永不断货！ <span style="opacity:.6">(10)</span></a><a class="cate" href="gallery/5036303030.html">P6000 <span style="opacity:.6">(5)</span></a><a class="cate" href="gallery/7eaf539f20365c427ec454085e95204e42323030.html">纯原 6层组合底 NB2002R-1906R <span style="opacity:.6">(48)</span></a><a class="cate" href="gallery/33353069305b507cfb52172098767ea75df465af.html">350椰子系列 顶级巴斯夫 !36-47 ! <span style="opacity:.6">(41)</span></a><a class="cate" href="gallery/41642053616d626120566567616e20963f8fea4e.html">Ad Samba Vegan 阿迪三叶草休闲厚底 36-45板鞋 <span style="opacity:.6">(8)</span></a><a class="cate" href="gallery/4e4235373430.html">NB5740 <span style="opacity:.6">(11)</span></a><a class="cate" href="gallery/6d1e6d1e978b2069305b5062d6978b2020ff1a33.html">洞洞鞋 椰子拖鞋  ：35-48 <span style="opacity:.6">(15)</span></a><a class="cate" href="gallery/4e423332377cfb5217.html">NB327系列 <span style="opacity:.6">(26)</span></a><a class="cate" href="gallery/4e42353734.html">NB574 <span style="opacity:.6">(19)</span></a><a class="cate" href="gallery/767b6708466c793520539f76d22051686c1457ab.html">登月Fly5 原盒 全气垫 <span style="opacity:.6">(8)</span></a><a class="cate" href="gallery/5a4f4f4d582d52554e332098de7ec77cfb521720.html">ZOOMX-RUN3 飞织系列 原盒全气垫 <span style="opacity:.6">(6)</span></a><a class="cate" href="gallery/56324b204d324b202080017239978b7cfb5217.html">V2K M2K  老爹鞋系列 <span style="opacity:.6">(44)</span></a><a class="cate" href="gallery/534e592b324ee3334ee3516859345c42205f9772.html">华夫2代3代全头层 得物芯片版本  五层组合底 <span style="opacity:.6">(21)</span></a><a class="cate" href="gallery/4d4c42207cfb5217.html">MLB 系列 <span style="opacity:.6">(13)</span></a><a class="cate" href="gallery/4e42393036302059345c42732a5df4208dd1978b.html">NB9060 头层猪巴 跑鞋 <span style="opacity:.6">(2)</span></a><a class="cate" href="gallery/67005f3a724820414a20333132204e0954084e00.html">最强版 AJ 312 三合一低帮 <span style="opacity:.6">(53)</span></a><a class="cate" href="gallery/9ca89c7c97625305978b33362d3435.html">鲨鱼面包鞋36-45 <span style="opacity:.6">(31)</span></a><a class="cate" href="gallery/39375b505f39593420516c53f87ea77cfb5217.html">97子弹头 公司级系列 <span style="opacity:.6">(86)</span></a><a class="cate" href="gallery/414a319ad85e2e2059345c425c0f86ee8170207e.html">AJ1高帮 头层小蛮腰 纯原顶级版本！更多配色不断更新上架！ <span style="opacity:.6">(109)</span></a><a class="cate" href="gallery/7eaf539f204e423939322d3939332d3939307633.html">纯原 NB992-993-990v3-990v5 <span style="opacity:.6">(15)</span></a><a class="cate" href="gallery/414a31204e2d90a67cfb52172059345c4276ae51.html">AJ1 中邦系列 头层皮公司货36-46 <span style="opacity:.6">(48)</span></a><a class="cate" href="gallery/9ea666065c0f767d978b2082af7247611f5e9472.html">麦昆小白鞋 芯片感应版本 ALEXANDER MCQUEEN 经典皮尾增高厚底男女款运动鞋 <span style="opacity:.6">(13)</span></a><a class="cate" href="gallery/53e49a70ff01810f810f978b2020516859345c42.html">古驰！脏脏鞋  全头层 芯片感应版本 <span style="opacity:.6">(23)</span></a><a class="cate" href="gallery/69305b5037303056312056322056337cfb5217.html">椰子700V1 V2 V3系列 <span style="opacity:.6">(3)</span></a><a class="cate" href="gallery/535a9e1f2042976220449e45.html">SZ鸟 B面 D鹅 <span style="opacity:.6">(16)</span></a><a class="cate" href="gallery/963f751820771f6807208dd1978b.html">阿甘 真标 跑鞋 <span style="opacity:.6">(95)</span></a><a class="cate" href="gallery/554747204f4e4e2d9ad85e2e2062d6978b20424b.html">UGG 低中高帮 拖鞋 BK博肯拖鞋 <span style="opacity:.6">(206)</span></a><a class="cate" href="gallery/534d494c4552455055424c494320677e7cd5539a.html">SMILEREPUBLIC 松糕厚底增高低帮 <span style="opacity:.6">(8)</span></a><a class="cate" href="gallery/4e09539f5eb788d5.html">三原康裕 <span style="opacity:.6">(5)</span></a><a class="cate" href="gallery/68465a01436f6e76657273657cfb52172053cc56.html">框威Converse系列 双围条蓝底 纯原顶级版本 原装工艺盒 可当正品 <span style="opacity:.6">(26)</span></a><a class="cate" href="gallery/5f0062d380054f4e5e2e.html">开拓者低帮 <span style="opacity:.6">(16)</span></a><a class="cate" href="gallery/7ae5978b.html">童鞋 <span style="opacity:.6">(189)</span></a><a class="cate" href="gallery/672a52067c7b76f8518c.html">未分类相册 <span style="opacity:.6">(2)</span></a></nav>
+  <nav class="sidebar"><a class="cate active" href="index.html">全部款式 <span style="opacity:.6">(38897)</span></a><a class="grp" href="gallery/978b7c7b.html">鞋类 <span style="opacity:.6">(29832)</span></a><a class="cate sub" href="gallery/978b7c7b_72794ef7b78dd16b652f4f1195f2.html">特价·跑步/休闲 <span style="opacity:.6">(2614)</span></a><a class="cate sub" href="gallery/978b7c7b_4e696b652041697220466f726365.html">Nike Air Force <span style="opacity:.6">(2585)</span></a><a class="cate sub" href="gallery/978b7c7b_416469646173.html">Adidas <span style="opacity:.6">(2291)</span></a><a class="cate sub" href="gallery/978b7c7b_72794ef7b7416469646173.html">特价·Adidas <span style="opacity:.6">(2228)</span></a><a class="cate sub" href="gallery/978b7c7b_416972204a6f7264616e.html">Air Jordan <span style="opacity:.6">(1943)</span></a><a class="cate sub" href="gallery/978b7c7b_72794ef7b74e696b65.html">特价·Nike <span style="opacity:.6">(1915)</span></a><a class="cate sub" href="gallery/978b7c7b_4e696b652051764ed6.html">Nike 其他 <span style="opacity:.6">(1717)</span></a><a class="cate sub" href="gallery/978b7c7b_72794ef7b74e9a745f58eb.html">特价·亚瑟士 <span style="opacity:.6">(1252)</span></a><a class="cate sub" href="gallery/978b7c7b_72794ef7b74e696b652041697220466f726365.html">特价·Nike Air Force <span style="opacity:.6">(1091)</span></a><a class="cate sub" href="gallery/978b7c7b_4e696b652044756e6b.html">Nike Dunk <span style="opacity:.6">(993)</span></a><a class="cate sub" href="gallery/978b7c7b_72794ef7b7416972204a6f7264616e.html">特价·Air Jordan <span style="opacity:.6">(751)</span></a><a class="cate sub" href="gallery/978b7c7b_72794ef7b759624f8854c1724c.html">特价·奢侈品牌 <span style="opacity:.6">(714)</span></a><a class="cate sub" href="gallery/978b7c7b_8db37403978b.html">足球鞋 <span style="opacity:.6">(658)</span></a><a class="cate sub" href="gallery/978b7c7b_72794ef7b751764ed6.html">特价·其他 <span style="opacity:.6">(600)</span></a><a class="cate sub" href="gallery/978b7c7b_72794ef7b74e696b652044756e6b.html">特价·Nike Dunk <span style="opacity:.6">(586)</span></a><a class="cate sub" href="gallery/978b7c7b_414a207cfb5217.html">AJ 系列 <span style="opacity:.6">(569)</span></a><a class="cate sub" href="gallery/978b7c7b_8dd16b65978b.html">跑步鞋 <span style="opacity:.6">(550)</span></a><a class="cate sub" href="gallery/978b7c7b_72794ef7b766028dd1.html">特价·昂跑 <span style="opacity:.6">(442)</span></a><a class="cate sub" href="gallery/978b7c7b_523a5ba2204d657263757269616c.html">刺客 Mercurial <span style="opacity:.6">(425)</span></a><a class="cate sub" href="gallery/978b7c7b_72794ef7b74e65772042616c616e6365.html">特价·New Balance <span style="opacity:.6">(417)</span></a><a class="cate sub" href="gallery/978b7c7b_4e65772042616c616e6365.html">New Balance <span style="opacity:.6">(395)</span></a><a class="cate sub" href="gallery/978b7c7b_486f6b61.html">Hoka <span style="opacity:.6">(380)</span></a><a class="cate sub" href="gallery/978b7c7b_4e9a745f58eb.html">亚瑟士 <span style="opacity:.6">(333)</span></a><a class="cate sub" href="gallery/978b7c7b_53215a012f4e0765af.html">匡威/万斯 <span style="opacity:.6">(330)</span></a><a class="cate sub" href="gallery/978b7c7b_5df49ece4e165bb6.html">巴黎世家 <span style="opacity:.6">(325)</span></a><a class="cate sub" href="gallery/978b7c7b_84287f5784992f8d8a91ce.html">萨罗蒙/越野 <span style="opacity:.6">(301)</span></a><a class="cate sub" href="gallery/978b7c7b_8d1d58f35934.html">贝壳头 <span style="opacity:.6">(300)</span></a><a class="cate sub" href="gallery/978b7c7b_72794ef7b762d6978b.html">特价·拖鞋 <span style="opacity:.6">(290)</span></a><a class="cate sub" href="gallery/978b7c7b_5fb78bad2f53414d4241.html">德训/SAMBA <span style="opacity:.6">(243)</span></a><a class="cate sub" href="gallery/978b7c7b_44756e6b2f5342.html">Dunk/SB <span style="opacity:.6">(234)</span></a><a class="cate sub" href="gallery/978b7c7b_65904e502046696c61.html">斐乐 Fila <span style="opacity:.6">(228)</span></a><a class="cate sub" href="gallery/978b7c7b_5547472f535a80af.html">UGG/博肯 <span style="opacity:.6">(221)</span></a><a class="cate sub" href="gallery/978b7c7b_4d4c42.html">MLB <span style="opacity:.6">(211)</span></a><a class="cate sub" href="gallery/978b7c7b_7ae5978b.html">童鞋 <span style="opacity:.6">(192)</span></a><a class="cate sub" href="gallery/978b7c7b_65f65c1a2f4f1195f2677f978b.html">时尚/休闲板鞋 <span style="opacity:.6">(155)</span></a><a class="cate sub" href="gallery/978b7c7b_4758205068616e746f6d.html">GX Phantom <span style="opacity:.6">(129)</span></a><a class="cate sub" href="gallery/978b7c7b_4775636369.html">Gucci <span style="opacity:.6">(109)</span></a><a class="cate sub" href="gallery/978b7c7b_65f65c1a8bbe8ba15e08.html">时尚设计师 <span style="opacity:.6">(106)</span></a><a class="cate sub" href="gallery/978b7c7b_5f6a9a6c.html">彪马 <span style="opacity:.6">(105)</span></a><a class="cate sub" href="gallery/978b7c7b_730e9e70205072656461746f72.html">猎鹰 Predator <span style="opacity:.6">(91)</span></a><a class="cate sub" href="gallery/978b7c7b_69305b50205965657a79.html">椰子 Yeezy <span style="opacity:.6">(79)</span></a><a class="cate sub" href="gallery/978b7c7b_7a7a519b7cfb5217.html">空军系列 <span style="opacity:.6">(79)</span></a><a class="cate sub" href="gallery/978b7c7b_5de588c59774.html">工装靴 <span style="opacity:.6">(76)</span></a><a class="cate sub" href="gallery/978b7c7b_59624f8854c1724c978b.html">奢侈品牌鞋 <span style="opacity:.6">(76)</span></a><a class="cate sub" href="gallery/978b7c7b_53179762.html">北面 <span style="opacity:.6">(75)</span></a><a class="cate sub" href="gallery/978b7c7b_98767ea77cbe54c1.html">顶级精品 <span style="opacity:.6">(72)</span></a><a class="cate sub" href="gallery/978b7c7b_8fd052a84f1195f2978b.html">运动休闲鞋 <span style="opacity:.6">(71)</span></a><a class="cate sub" href="gallery/978b7c7b_51764ed68db37403978b.html">其他足球鞋 <span style="opacity:.6">(67)</span></a><a class="cate sub" href="gallery/978b7c7b_62d6978b2f6d1e6d1e978b.html">拖鞋/洞洞鞋 <span style="opacity:.6">(47)</span></a><a class="cate sub" href="gallery/978b7c7b_4f205947205469656d706f.html">传奇 Tiempo <span style="opacity:.6">(37)</span></a><a class="cate sub" href="gallery/978b7c7b_463530.html">F50 <span style="opacity:.6">(34)</span></a><a class="cate sub" href="gallery/978b7c7b_97625305978b.html">面包鞋 <span style="opacity:.6">(31)</span></a><a class="cate sub" href="gallery/978b7c7b_5965657a79.html">Yeezy <span style="opacity:.6">(30)</span></a><a class="cate sub" href="gallery/978b7c7b_733f4eba59342042415045.html">猿人头 BAPE <span style="opacity:.6">(19)</span></a><a class="cate sub" href="gallery/978b7c7b_51764ed6.html">其他 <span style="opacity:.6">(12)</span></a><a class="cate sub" href="gallery/978b7c7b_554747.html">UGG <span style="opacity:.6">(5)</span></a><a class="cate sub" href="gallery/978b7c7b_72794ef7b77ae5978b.html">特价·童鞋 <span style="opacity:.6">(3)</span></a><a class="grp" href="gallery/74038863.html">球衣 <span style="opacity:.6">(6648)</span></a><a class="cate sub" href="gallery/74038863_4e42412074038863.html">NBA 球衣 <span style="opacity:.6">(3056)</span></a><a class="cate sub" href="gallery/74038863_5df4753280548d5b.html">巴甲联赛 <span style="opacity:.6">(447)</span></a><a class="cate sub" href="gallery/74038863_4e42412070ed538b.html">NBA 热压 <span style="opacity:.6">(382)</span></a><a class="cate sub" href="gallery/74038863_8d5b5b637cfb5217.html">赛季系列 <span style="opacity:.6">(367)</span></a><a class="cate sub" href="gallery/74038863_4e42412051764ed67403961f.html">NBA 其他球队 <span style="opacity:.6">(350)</span></a><a class="cate sub" href="gallery/74038863_65b08d5b5b63.html">新赛季 <span style="opacity:.6">(311)</span></a><a class="cate sub" href="gallery/74038863_4e424120740388e4.html">NBA 球裤 <span style="opacity:.6">(212)</span></a><a class="cate sub" href="gallery/74038863_32303236204e16754c676f.html">2026 世界杯 <span style="opacity:.6">(190)</span></a><a class="cate sub" href="gallery/74038863_8054540db7590d53e4.html">联名·复古 <span style="opacity:.6">(182)</span></a><a class="cate sub" href="gallery/74038863_57ce5e027248b77279522b7248.html">城市版·特别版 <span style="opacity:.6">(126)</span></a><a class="cate sub" href="gallery/74038863_610f7532.html">意甲 <span style="opacity:.6">(112)</span></a><a class="cate sub" href="gallery/74038863_4e464c2074038863.html">NFL 球衣 <span style="opacity:.6">(82)</span></a><a class="cate sub" href="gallery/74038863_6e564eba961f.html">湖人队 <span style="opacity:.6">(68)</span></a><a class="cate sub" href="gallery/74038863_4d4c422074038863.html">MLB 球衣 <span style="opacity:.6">(66)</span></a><a class="cate sub" href="gallery/74038863_5fb77532.html">德甲 <span style="opacity:.6">(56)</span></a><a class="cate sub" href="gallery/74038863_667a52297532.html">智利甲 <span style="opacity:.6">(52)</span></a><a class="cate sub" href="gallery/74038863_516c725b961f.html">公牛队 <span style="opacity:.6">(50)</span></a><a class="cate sub" href="gallery/74038863_83777532.html">荷甲 <span style="opacity:.6">(50)</span></a><a class="cate sub" href="gallery/74038863_56fd5bb6961f.html">国家队 <span style="opacity:.6">(46)</span></a><a class="cate sub" href="gallery/74038863_82f18d85.html">英超 <span style="opacity:.6">(44)</span></a><a class="cate sub" href="gallery/74038863_740354587248.html">球员版 <span style="opacity:.6">(39)</span></a><a class="cate sub" href="gallery/74038863_74038863b751764ed6.html">球衣·其他 <span style="opacity:.6">(38)</span></a><a class="cate sub" href="gallery/74038863_590d53e4.html">复古 <span style="opacity:.6">(37)</span></a><a class="cate sub" href="gallery/74038863_4e42412059736b3e.html">NBA 女款 <span style="opacity:.6">(35)</span></a><a class="cate sub" href="gallery/74038863_4e464c2075376b3e.html">NFL 男款 <span style="opacity:.6">(34)</span></a><a class="cate sub" href="gallery/74038863_4e464c2059736b3e.html">NFL 女款 <span style="opacity:.6">(34)</span></a><a class="cate sub" href="gallery/74038863_5168660e661fb756fd5bb6961f.html">全明星·国家队 <span style="opacity:.6">(32)</span></a><a class="cate sub" href="gallery/74038863_963f7532.html">阿甲 <span style="opacity:.6">(32)</span></a><a class="cate sub" href="gallery/74038863_59736b3e.html">女款 <span style="opacity:.6">(32)</span></a><a class="cate sub" href="gallery/74038863_4e464c2070ed538b.html">NFL 热压 <span style="opacity:.6">(19)</span></a><a class="cate sub" href="gallery/74038863_70ed706b961f.html">热火队 <span style="opacity:.6">(16)</span></a><a class="cate sub" href="gallery/74038863_7f8e804c8054.html">美职联 <span style="opacity:.6">(15)</span></a><a class="cate sub" href="gallery/74038863_4e464c2052a059277801.html">NFL 加大码 <span style="opacity:.6">(12)</span></a><a class="cate sub" href="gallery/74038863_8fd052a84e0a8863.html">运动上衣 <span style="opacity:.6">(9)</span></a><a class="cate sub" href="gallery/74038863_7cbe90096b3e.html">精选款 <span style="opacity:.6">(8)</span></a><a class="cate sub" href="gallery/74038863_897f7532.html">西甲 <span style="opacity:.6">(4)</span></a><a class="cate sub" href="gallery/74038863_6cd57532.html">法甲 <span style="opacity:.6">(2)</span></a><a class="cate sub" href="gallery/74038863_7ae588c574038863.html">童装球衣 <span style="opacity:.6">(1)</span></a><a class="grp" href="gallery/740388e4.html">球裤 <span style="opacity:.6">(280)</span></a><a class="cate sub" href="gallery/740388e4_53e3888b88e4.html">口袋裤 <span style="opacity:.6">(253)</span></a><a class="cate sub" href="gallery/740388e4_4e424120740388e4.html">NBA 球裤 <span style="opacity:.6">(14)</span></a><a class="cate sub" href="gallery/740388e4_4e464c20740388e4.html">NFL 球裤 <span style="opacity:.6">(13)</span></a><a class="grp" href="gallery/670d88c5.html">服装 <span style="opacity:.6">(1475)</span></a><a class="cate sub" href="gallery/670d88c5_957f88968bad7ec3670d.html">长袖训练服 <span style="opacity:.6">(283)</span></a><a class="cate sub" href="gallery/670d88c5_77ed88968bad7ec3670d.html">短袖训练服 <span style="opacity:.6">(242)</span></a><a class="cate sub" href="gallery/670d88c5_5939514b59165957.html">夹克外套 <span style="opacity:.6">(227)</span></a><a class="cate sub" href="gallery/670d88c5_80cc5fc3.html">背心 <span style="opacity:.6">(186)</span></a><a class="cate sub" href="gallery/670d88c5_536b8863b751764ed6.html">卫衣·其他 <span style="opacity:.6">(146)</span></a><a class="cate sub" href="gallery/670d88c5_504f4c4f20886b.html">POLO 衫 <span style="opacity:.6">(131)</span></a><a class="cate sub" href="gallery/670d88c5_5e3d886b536b8863.html">帽衫卫衣 <span style="opacity:.6">(112)</span></a><a class="cate sub" href="gallery/670d88c5_74038ff754688fb9.html">球迷周边 <span style="opacity:.6">(87)</span></a><a class="cate sub" href="gallery/670d88c5_74038ff72054206064.html">球迷 T 恤 <span style="opacity:.6">(38)</span></a><a class="cate sub" href="gallery/670d88c5_98ce8863.html">风衣 <span style="opacity:.6">(16)</span></a><a class="cate sub" href="gallery/670d88c5_536b8863.html">卫衣 <span style="opacity:.6">(7)</span></a><a class="grp" href="gallery/53057c7b.html">包类 <span style="opacity:.6">(85)</span></a><a class="cate sub" href="gallery/53057c7b_51764ed654c1724c.html">其他品牌 <span style="opacity:.6">(29)</span></a><a class="cate sub" href="gallery/53057c7b_4c56.html">LV <span style="opacity:.6">(22)</span></a><a class="cate sub" href="gallery/53057c7b_4755434349.html">GUCCI <span style="opacity:.6">(11)</span></a><a class="cate sub" href="gallery/53057c7b_4348414e454c.html">CHANEL <span style="opacity:.6">(8)</span></a><a class="cate sub" href="gallery/53057c7b_59534c.html">YSL <span style="opacity:.6">(6)</span></a><a class="cate sub" href="gallery/53057c7b_44494f52.html">DIOR <span style="opacity:.6">(6)</span></a><a class="cate sub" href="gallery/53057c7b_51764ed6.html">其他 <span style="opacity:.6">(3)</span></a><a class="grp" href="gallery/7ae588c57ae5978b.html">童装童鞋 <span style="opacity:.6">(577)</span></a><a class="cate sub" href="gallery/7ae588c57ae5978b_7ae588c5.html">童装 <span style="opacity:.6">(343)</span></a><a class="cate sub" href="gallery/7ae588c57ae5978b_4e4241207ae588c5.html">NBA 童装 <span style="opacity:.6">(174)</span></a><a class="cate sub" href="gallery/7ae588c57ae5978b_7ae588c574038863.html">童装球衣 <span style="opacity:.6">(60)</span></a></nav>
   <main class="main">
     <div class="grid" id="grid">
-  <div class="card" data-img="img/5fb78bad202053414d4241_142_35.5-46.jpg" data-title="35.5-46"
-       data-sku="" data-sizes="" data-msg="35.5-46
-图片: https://fzbn168-spec.github.io/AIF-Sports/img/5fb78bad202053414d4241_142_35.5-46.jpg"
-       data-search=" 35.5-46">
-    <img loading="lazy" src="img_t/5fb78bad202053414d4241_142_35.5-46.jpg" alt="35.5-46">
+  <div class="card" data-img="img/416972204a6f7264616e_511_Travis_Scott_x_Fragment_Design_x_A.jpg" data-title="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 斯图西联名 白蓝拼接 低帮文化休闲板鞋(AA0D)"
+       data-sku="" data-sizes="" data-msg="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 斯图西联名 白蓝拼接 低帮文化休闲板鞋(AA0D)
+图片: https://fzbn168-spec.github.io/AIF-Sports/gallery/img/416972204a6f7264616e_511_Travis_Scott_x_Fragment_Design_x_A.jpg"
+       data-search=" travis scott x fragment design x air jordan 1 low og sp aj1 斯图西联名 白蓝拼接 低帮文化休闲板鞋(aa0d)">
+    <img loading="lazy" src="img_t/416972204a6f7264616e_511_Travis_Scott_x_Fragment_Design_x_A.jpg" alt="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 斯图西联名 白蓝拼接 低帮文化休闲板鞋(AA0D)">
     <div class="meta">
-      <div class="title">35.5-46</div>
+      <div class="title">Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 斯图西联名 白蓝拼接 低帮文化休闲板鞋(AA0D)</div>
       
       
       <div class="cta">
-        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=35.5-46%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F5fb78bad202053414d4241_142_35.5-46.jpg">WhatsApp</a>
-        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=35.5-46%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F5fb78bad202053414d4241_142_35.5-46.jpg">Email</a>
+        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E6%96%AF%E5%9B%BE%E8%A5%BF%E8%81%94%E5%90%8D%20%E7%99%BD%E8%93%9D%E6%8B%BC%E6%8E%A5%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E6%9D%BF%E9%9E%8B%28AA0D%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_511_Travis_Scott_x_Fragment_Design_x_A.jpg">WhatsApp</a>
+        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E6%96%AF%E5%9B%BE%E8%A5%BF%E8%81%94%E5%90%8D%20%E7%99%BD%E8%93%9D%E6%8B%BC%E6%8E%A5%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E6%9D%BF%E9%9E%8B%28AA0D%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_511_Travis_Scott_x_Fragment_Design_x_A.jpg">Email</a>
       </div>
     </div>
   </div>
-  <div class="card" data-img="img/5fb78bad202053414d4241_143_35.5-46.jpg" data-title="35.5-46"
-       data-sku="" data-sizes="" data-msg="35.5-46
-图片: https://fzbn168-spec.github.io/AIF-Sports/img/5fb78bad202053414d4241_143_35.5-46.jpg"
-       data-search=" 35.5-46">
-    <img loading="lazy" src="img_t/5fb78bad202053414d4241_143_35.5-46.jpg" alt="35.5-46">
+  <div class="card" data-img="img/416972204a6f7264616e_512_Travis_Scott_x_Fragment_Design_x_A.jpg" data-title="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 蛇年限定 双拼亮黑 低帮文化休闲板鞋 Y(FB9C)"
+       data-sku="" data-sizes="" data-msg="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 蛇年限定 双拼亮黑 低帮文化休闲板鞋 Y(FB9C)
+图片: https://fzbn168-spec.github.io/AIF-Sports/gallery/img/416972204a6f7264616e_512_Travis_Scott_x_Fragment_Design_x_A.jpg"
+       data-search=" travis scott x fragment design x air jordan 1 low og sp aj1 蛇年限定 双拼亮黑 低帮文化休闲板鞋 y(fb9c)">
+    <img loading="lazy" src="img_t/416972204a6f7264616e_512_Travis_Scott_x_Fragment_Design_x_A.jpg" alt="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 蛇年限定 双拼亮黑 低帮文化休闲板鞋 Y(FB9C)">
     <div class="meta">
-      <div class="title">35.5-46</div>
+      <div class="title">Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 蛇年限定 双拼亮黑 低帮文化休闲板鞋 Y(FB9C)</div>
       
       
       <div class="cta">
-        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=35.5-46%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F5fb78bad202053414d4241_143_35.5-46.jpg">WhatsApp</a>
-        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=35.5-46%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F5fb78bad202053414d4241_143_35.5-46.jpg">Email</a>
+        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E8%9B%87%E5%B9%B4%E9%99%90%E5%AE%9A%20%E5%8F%8C%E6%8B%BC%E4%BA%AE%E9%BB%91%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E6%9D%BF%E9%9E%8B%20Y%28FB9C%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_512_Travis_Scott_x_Fragment_Design_x_A.jpg">WhatsApp</a>
+        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E8%9B%87%E5%B9%B4%E9%99%90%E5%AE%9A%20%E5%8F%8C%E6%8B%BC%E4%BA%AE%E9%BB%91%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E6%9D%BF%E9%9E%8B%20Y%28FB9C%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_512_Travis_Scott_x_Fragment_Design_x_A.jpg">Email</a>
       </div>
     </div>
   </div>
-  <div class="card" data-img="img/5fb78bad202053414d4241_144_35.5-46.jpg" data-title="35.5-46"
-       data-sku="" data-sizes="" data-msg="35.5-46
-图片: https://fzbn168-spec.github.io/AIF-Sports/img/5fb78bad202053414d4241_144_35.5-46.jpg"
-       data-search=" 35.5-46">
-    <img loading="lazy" src="img_t/5fb78bad202053414d4241_144_35.5-46.jpg" alt="35.5-46">
+  <div class="card" data-img="img/416972204a6f7264616e_513_Travis_Scott_x_Fragment_Design_x_A.jpg" data-title="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 蛇年限定 亮黑蛇纹 低帮文化休闲板鞋 Y(4F9F)"
+       data-sku="" data-sizes="" data-msg="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 蛇年限定 亮黑蛇纹 低帮文化休闲板鞋 Y(4F9F)
+图片: https://fzbn168-spec.github.io/AIF-Sports/gallery/img/416972204a6f7264616e_513_Travis_Scott_x_Fragment_Design_x_A.jpg"
+       data-search=" travis scott x fragment design x air jordan 1 low og sp aj1 蛇年限定 亮黑蛇纹 低帮文化休闲板鞋 y(4f9f)">
+    <img loading="lazy" src="img_t/416972204a6f7264616e_513_Travis_Scott_x_Fragment_Design_x_A.jpg" alt="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 蛇年限定 亮黑蛇纹 低帮文化休闲板鞋 Y(4F9F)">
     <div class="meta">
-      <div class="title">35.5-46</div>
+      <div class="title">Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 蛇年限定 亮黑蛇纹 低帮文化休闲板鞋 Y(4F9F)</div>
       
       
       <div class="cta">
-        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=35.5-46%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F5fb78bad202053414d4241_144_35.5-46.jpg">WhatsApp</a>
-        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=35.5-46%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F5fb78bad202053414d4241_144_35.5-46.jpg">Email</a>
+        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E8%9B%87%E5%B9%B4%E9%99%90%E5%AE%9A%20%E4%BA%AE%E9%BB%91%E8%9B%87%E7%BA%B9%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E6%9D%BF%E9%9E%8B%20Y%284F9F%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_513_Travis_Scott_x_Fragment_Design_x_A.jpg">WhatsApp</a>
+        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E8%9B%87%E5%B9%B4%E9%99%90%E5%AE%9A%20%E4%BA%AE%E9%BB%91%E8%9B%87%E7%BA%B9%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E6%9D%BF%E9%9E%8B%20Y%284F9F%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_513_Travis_Scott_x_Fragment_Design_x_A.jpg">Email</a>
       </div>
     </div>
   </div>
-  <div class="card" data-img="img/5fb78bad202053414d4241_145_35.5-46.jpg" data-title="35.5-46"
-       data-sku="" data-sizes="" data-msg="35.5-46
-图片: https://fzbn168-spec.github.io/AIF-Sports/img/5fb78bad202053414d4241_145_35.5-46.jpg"
-       data-search=" 35.5-46">
-    <img loading="lazy" src="img_t/5fb78bad202053414d4241_145_35.5-46.jpg" alt="35.5-46">
+  <div class="card" data-img="img/416972204a6f7264616e_514_Travis_Scott_x_Fragment_Design_x_A.jpg" data-title="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 闪电联名 虚影黑勾 低帮文化休闲板鞋 L(EC80)"
+       data-sku="" data-sizes="" data-msg="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 闪电联名 虚影黑勾 低帮文化休闲板鞋 L(EC80)
+图片: https://fzbn168-spec.github.io/AIF-Sports/gallery/img/416972204a6f7264616e_514_Travis_Scott_x_Fragment_Design_x_A.jpg"
+       data-search=" travis scott x fragment design x air jordan 1 low og sp aj1 闪电联名 虚影黑勾 低帮文化休闲板鞋 l(ec80)">
+    <img loading="lazy" src="img_t/416972204a6f7264616e_514_Travis_Scott_x_Fragment_Design_x_A.jpg" alt="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 闪电联名 虚影黑勾 低帮文化休闲板鞋 L(EC80)">
     <div class="meta">
-      <div class="title">35.5-46</div>
+      <div class="title">Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 闪电联名 虚影黑勾 低帮文化休闲板鞋 L(EC80)</div>
       
       
       <div class="cta">
-        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=35.5-46%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F5fb78bad202053414d4241_145_35.5-46.jpg">WhatsApp</a>
-        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=35.5-46%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F5fb78bad202053414d4241_145_35.5-46.jpg">Email</a>
+        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E9%97%AA%E7%94%B5%E8%81%94%E5%90%8D%20%E8%99%9A%E5%BD%B1%E9%BB%91%E5%8B%BE%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E6%9D%BF%E9%9E%8B%20L%28EC80%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_514_Travis_Scott_x_Fragment_Design_x_A.jpg">WhatsApp</a>
+        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E9%97%AA%E7%94%B5%E8%81%94%E5%90%8D%20%E8%99%9A%E5%BD%B1%E9%BB%91%E5%8B%BE%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E6%9D%BF%E9%9E%8B%20L%28EC80%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_514_Travis_Scott_x_Fragment_Design_x_A.jpg">Email</a>
       </div>
     </div>
   </div>
-  <div class="card" data-img="img/5fb78bad202053414d4241_146_36-40.jpg" data-title="36-40"
-       data-sku="" data-sizes="" data-msg="36-40
-图片: https://fzbn168-spec.github.io/AIF-Sports/img/5fb78bad202053414d4241_146_36-40.jpg"
-       data-search=" 36-40">
-    <img loading="lazy" src="img_t/5fb78bad202053414d4241_146_36-40.jpg" alt="36-40">
+  <div class="card" data-img="img/416972204a6f7264616e_515_Travis_Scott_x_Fragment_Design_x_A.jpg" data-title="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 闪电联名 闪电蓝勾 低帮文化休闲板鞋 L(0949)"
+       data-sku="" data-sizes="" data-msg="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 闪电联名 闪电蓝勾 低帮文化休闲板鞋 L(0949)
+图片: https://fzbn168-spec.github.io/AIF-Sports/gallery/img/416972204a6f7264616e_515_Travis_Scott_x_Fragment_Design_x_A.jpg"
+       data-search=" travis scott x fragment design x air jordan 1 low og sp aj1 闪电联名 闪电蓝勾 低帮文化休闲板鞋 l(0949)">
+    <img loading="lazy" src="img_t/416972204a6f7264616e_515_Travis_Scott_x_Fragment_Design_x_A.jpg" alt="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 闪电联名 闪电蓝勾 低帮文化休闲板鞋 L(0949)">
     <div class="meta">
-      <div class="title">36-40</div>
+      <div class="title">Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 闪电联名 闪电蓝勾 低帮文化休闲板鞋 L(0949)</div>
       
       
       <div class="cta">
-        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=36-40%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F5fb78bad202053414d4241_146_36-40.jpg">WhatsApp</a>
-        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=36-40%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F5fb78bad202053414d4241_146_36-40.jpg">Email</a>
+        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E9%97%AA%E7%94%B5%E8%81%94%E5%90%8D%20%E9%97%AA%E7%94%B5%E8%93%9D%E5%8B%BE%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E6%9D%BF%E9%9E%8B%20L%280949%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_515_Travis_Scott_x_Fragment_Design_x_A.jpg">WhatsApp</a>
+        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E9%97%AA%E7%94%B5%E8%81%94%E5%90%8D%20%E9%97%AA%E7%94%B5%E8%93%9D%E5%8B%BE%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E6%9D%BF%E9%9E%8B%20L%280949%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_515_Travis_Scott_x_Fragment_Design_x_A.jpg">Email</a>
       </div>
     </div>
   </div>
-  <div class="card" data-img="img/5fb78bad202053414d4241_147_35-45.jpg" data-title="35-45"
-       data-sku="" data-sizes="" data-msg="35-45
-图片: https://fzbn168-spec.github.io/AIF-Sports/img/5fb78bad202053414d4241_147_35-45.jpg"
-       data-search=" 35-45">
-    <img loading="lazy" src="img_t/5fb78bad202053414d4241_147_35-45.jpg" alt="35-45">
+  <div class="card" data-img="img/416972204a6f7264616e_516_Travis_Scott_x_Fragment_Design_x_A.jpg" data-title="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 闪电联名 低帮文化休闲板鞋 LK1099(D0B4)"
+       data-sku="" data-sizes="" data-msg="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 闪电联名 低帮文化休闲板鞋 LK1099(D0B4)
+图片: https://fzbn168-spec.github.io/AIF-Sports/gallery/img/416972204a6f7264616e_516_Travis_Scott_x_Fragment_Design_x_A.jpg"
+       data-search=" travis scott x fragment design x air jordan 1 low og sp aj1 闪电联名 低帮文化休闲板鞋 lk1099(d0b4)">
+    <img loading="lazy" src="img_t/416972204a6f7264616e_516_Travis_Scott_x_Fragment_Design_x_A.jpg" alt="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 闪电联名 低帮文化休闲板鞋 LK1099(D0B4)">
     <div class="meta">
-      <div class="title">35-45</div>
+      <div class="title">Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 闪电联名 低帮文化休闲板鞋 LK1099(D0B4)</div>
       
       
       <div class="cta">
-        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=35-45%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F5fb78bad202053414d4241_147_35-45.jpg">WhatsApp</a>
-        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=35-45%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F5fb78bad202053414d4241_147_35-45.jpg">Email</a>
+        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E9%97%AA%E7%94%B5%E8%81%94%E5%90%8D%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E6%9D%BF%E9%9E%8B%20LK1099%28D0B4%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_516_Travis_Scott_x_Fragment_Design_x_A.jpg">WhatsApp</a>
+        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E9%97%AA%E7%94%B5%E8%81%94%E5%90%8D%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E6%9D%BF%E9%9E%8B%20LK1099%28D0B4%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_516_Travis_Scott_x_Fragment_Design_x_A.jpg">Email</a>
       </div>
     </div>
   </div>
-  <div class="card" data-img="img/5fb78bad202053414d4241_148_35-45.jpg" data-title="35-45"
-       data-sku="" data-sizes="" data-msg="35-45
-图片: https://fzbn168-spec.github.io/AIF-Sports/img/5fb78bad202053414d4241_148_35-45.jpg"
-       data-search=" 35-45">
-    <img loading="lazy" src="img_t/5fb78bad202053414d4241_148_35-45.jpg" alt="35-45">
+  <div class="card" data-img="img/416972204a6f7264616e_517_Travis_Scott_x_Fragment_Design_x_A.jpg" data-title="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1斯图西联名 台球蓝勾 低帮文化休闲板(F464)"
+       data-sku="" data-sizes="" data-msg="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1斯图西联名 台球蓝勾 低帮文化休闲板(F464)
+图片: https://fzbn168-spec.github.io/AIF-Sports/gallery/img/416972204a6f7264616e_517_Travis_Scott_x_Fragment_Design_x_A.jpg"
+       data-search=" travis scott x fragment design x air jordan 1 low og sp aj1 乔1斯图西联名 台球蓝勾 低帮文化休闲板(f464)">
+    <img loading="lazy" src="img_t/416972204a6f7264616e_517_Travis_Scott_x_Fragment_Design_x_A.jpg" alt="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1斯图西联名 台球蓝勾 低帮文化休闲板(F464)">
     <div class="meta">
-      <div class="title">35-45</div>
+      <div class="title">Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1斯图西联名 台球蓝勾 低帮文化休闲板(F464)</div>
       
       
       <div class="cta">
-        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=35-45%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F5fb78bad202053414d4241_148_35-45.jpg">WhatsApp</a>
-        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=35-45%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F5fb78bad202053414d4241_148_35-45.jpg">Email</a>
+        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E4%B9%941%E6%96%AF%E5%9B%BE%E8%A5%BF%E8%81%94%E5%90%8D%20%E5%8F%B0%E7%90%83%E8%93%9D%E5%8B%BE%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E6%9D%BF%28F464%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_517_Travis_Scott_x_Fragment_Design_x_A.jpg">WhatsApp</a>
+        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E4%B9%941%E6%96%AF%E5%9B%BE%E8%A5%BF%E8%81%94%E5%90%8D%20%E5%8F%B0%E7%90%83%E8%93%9D%E5%8B%BE%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E6%9D%BF%28F464%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_517_Travis_Scott_x_Fragment_Design_x_A.jpg">Email</a>
       </div>
     </div>
   </div>
-  <div class="card" data-img="img/5fb78bad202053414d4241_149_35-45.jpg" data-title="35-45"
-       data-sku="" data-sizes="" data-msg="35-45
-图片: https://fzbn168-spec.github.io/AIF-Sports/img/5fb78bad202053414d4241_149_35-45.jpg"
-       data-search=" 35-45">
-    <img loading="lazy" src="img_t/5fb78bad202053414d4241_149_35-45.jpg" alt="35-45">
+  <div class="card" data-img="img/416972204a6f7264616e_518_Travis_Scott_x_Air_Jordan_1_Low_OG.jpg" data-title="Travis Scott x Air Jordan 1 Low OG AJ1 乔1倒勾低帮 DZ4137-700(8BE3)"
+       data-sku="" data-sizes="" data-msg="Travis Scott x Air Jordan 1 Low OG AJ1 乔1倒勾低帮 DZ4137-700(8BE3)
+图片: https://fzbn168-spec.github.io/AIF-Sports/gallery/img/416972204a6f7264616e_518_Travis_Scott_x_Air_Jordan_1_Low_OG.jpg"
+       data-search=" travis scott x air jordan 1 low og aj1 乔1倒勾低帮 dz4137-700(8be3)">
+    <img loading="lazy" src="img_t/416972204a6f7264616e_518_Travis_Scott_x_Air_Jordan_1_Low_OG.jpg" alt="Travis Scott x Air Jordan 1 Low OG AJ1 乔1倒勾低帮 DZ4137-700(8BE3)">
     <div class="meta">
-      <div class="title">35-45</div>
+      <div class="title">Travis Scott x Air Jordan 1 Low OG AJ1 乔1倒勾低帮 DZ4137-700(8BE3)</div>
       
       
       <div class="cta">
-        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=35-45%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F5fb78bad202053414d4241_149_35-45.jpg">WhatsApp</a>
-        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=35-45%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F5fb78bad202053414d4241_149_35-45.jpg">Email</a>
+        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=Travis%20Scott%20x%20Air%20Jordan%201%20Low%20OG%20AJ1%20%E4%B9%941%E5%80%92%E5%8B%BE%E4%BD%8E%E5%B8%AE%20DZ4137-700%288BE3%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_518_Travis_Scott_x_Air_Jordan_1_Low_OG.jpg">WhatsApp</a>
+        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=Travis%20Scott%20x%20Air%20Jordan%201%20Low%20OG%20AJ1%20%E4%B9%941%E5%80%92%E5%8B%BE%E4%BD%8E%E5%B8%AE%20DZ4137-700%288BE3%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_518_Travis_Scott_x_Air_Jordan_1_Low_OG.jpg">Email</a>
       </div>
     </div>
   </div>
-  <div class="card" data-img="img/5fb78bad202053414d4241_150_35-45.jpg" data-title="35-45"
-       data-sku="" data-sizes="" data-msg="35-45
-图片: https://fzbn168-spec.github.io/AIF-Sports/img/5fb78bad202053414d4241_150_35-45.jpg"
-       data-search=" 35-45">
-    <img loading="lazy" src="img_t/5fb78bad202053414d4241_150_35-45.jpg" alt="35-45">
+  <div class="card" data-img="img/416972204a6f7264616e_519_Travis_Scott_x_Air_Jordan_1_Low_OG.jpg" data-title="Travis Scott x Air Jordan 1 Low OG AJ1 乔1倒勾低帮 DZ4137-700(8A21)"
+       data-sku="" data-sizes="" data-msg="Travis Scott x Air Jordan 1 Low OG AJ1 乔1倒勾低帮 DZ4137-700(8A21)
+图片: https://fzbn168-spec.github.io/AIF-Sports/gallery/img/416972204a6f7264616e_519_Travis_Scott_x_Air_Jordan_1_Low_OG.jpg"
+       data-search=" travis scott x air jordan 1 low og aj1 乔1倒勾低帮 dz4137-700(8a21)">
+    <img loading="lazy" src="img_t/416972204a6f7264616e_519_Travis_Scott_x_Air_Jordan_1_Low_OG.jpg" alt="Travis Scott x Air Jordan 1 Low OG AJ1 乔1倒勾低帮 DZ4137-700(8A21)">
     <div class="meta">
-      <div class="title">35-45</div>
+      <div class="title">Travis Scott x Air Jordan 1 Low OG AJ1 乔1倒勾低帮 DZ4137-700(8A21)</div>
       
       
       <div class="cta">
-        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=35-45%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F5fb78bad202053414d4241_150_35-45.jpg">WhatsApp</a>
-        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=35-45%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F5fb78bad202053414d4241_150_35-45.jpg">Email</a>
+        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=Travis%20Scott%20x%20Air%20Jordan%201%20Low%20OG%20AJ1%20%E4%B9%941%E5%80%92%E5%8B%BE%E4%BD%8E%E5%B8%AE%20DZ4137-700%288A21%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_519_Travis_Scott_x_Air_Jordan_1_Low_OG.jpg">WhatsApp</a>
+        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=Travis%20Scott%20x%20Air%20Jordan%201%20Low%20OG%20AJ1%20%E4%B9%941%E5%80%92%E5%8B%BE%E4%BD%8E%E5%B8%AE%20DZ4137-700%288A21%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_519_Travis_Scott_x_Air_Jordan_1_Low_OG.jpg">Email</a>
       </div>
     </div>
   </div>
-  <div class="card" data-img="img/5fb78bad202053414d4241_151_35-45.jpg" data-title="35-45"
-       data-sku="" data-sizes="" data-msg="35-45
-图片: https://fzbn168-spec.github.io/AIF-Sports/img/5fb78bad202053414d4241_151_35-45.jpg"
-       data-search=" 35-45">
-    <img loading="lazy" src="img_t/5fb78bad202053414d4241_151_35-45.jpg" alt="35-45">
+  <div class="card" data-img="img/416972204a6f7264616e_520_Travis_Scott_x_Air_Jordan_1_Low_OG.jpg" data-title="Travis Scott x Air Jordan 1 Low OG AJ1 乔1倒勾低帮 DM7866-600(D424)"
+       data-sku="" data-sizes="" data-msg="Travis Scott x Air Jordan 1 Low OG AJ1 乔1倒勾低帮 DM7866-600(D424)
+图片: https://fzbn168-spec.github.io/AIF-Sports/gallery/img/416972204a6f7264616e_520_Travis_Scott_x_Air_Jordan_1_Low_OG.jpg"
+       data-search=" travis scott x air jordan 1 low og aj1 乔1倒勾低帮 dm7866-600(d424)">
+    <img loading="lazy" src="img_t/416972204a6f7264616e_520_Travis_Scott_x_Air_Jordan_1_Low_OG.jpg" alt="Travis Scott x Air Jordan 1 Low OG AJ1 乔1倒勾低帮 DM7866-600(D424)">
     <div class="meta">
-      <div class="title">35-45</div>
+      <div class="title">Travis Scott x Air Jordan 1 Low OG AJ1 乔1倒勾低帮 DM7866-600(D424)</div>
       
       
       <div class="cta">
-        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=35-45%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F5fb78bad202053414d4241_151_35-45.jpg">WhatsApp</a>
-        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=35-45%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F5fb78bad202053414d4241_151_35-45.jpg">Email</a>
+        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=Travis%20Scott%20x%20Air%20Jordan%201%20Low%20OG%20AJ1%20%E4%B9%941%E5%80%92%E5%8B%BE%E4%BD%8E%E5%B8%AE%20DM7866-600%28D424%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_520_Travis_Scott_x_Air_Jordan_1_Low_OG.jpg">WhatsApp</a>
+        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=Travis%20Scott%20x%20Air%20Jordan%201%20Low%20OG%20AJ1%20%E4%B9%941%E5%80%92%E5%8B%BE%E4%BD%8E%E5%B8%AE%20DM7866-600%28D424%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_520_Travis_Scott_x_Air_Jordan_1_Low_OG.jpg">Email</a>
       </div>
     </div>
   </div>
-  <div class="card" data-img="img/5fb78bad202053414d4241_152_35-45.jpg" data-title="35-45"
-       data-sku="" data-sizes="" data-msg="35-45
-图片: https://fzbn168-spec.github.io/AIF-Sports/img/5fb78bad202053414d4241_152_35-45.jpg"
-       data-search=" 35-45">
-    <img loading="lazy" src="img_t/5fb78bad202053414d4241_152_35-45.jpg" alt="35-45">
+  <div class="card" data-img="img/416972204a6f7264616e_521_Travis_Scott_x_Air_Jordan_1_Low_OG.jpg" data-title="Travis Scott x Air Jordan 1 Low OG AJ1 乔1倒勾低帮 DM7866-201(A78C)"
+       data-sku="" data-sizes="" data-msg="Travis Scott x Air Jordan 1 Low OG AJ1 乔1倒勾低帮 DM7866-201(A78C)
+图片: https://fzbn168-spec.github.io/AIF-Sports/gallery/img/416972204a6f7264616e_521_Travis_Scott_x_Air_Jordan_1_Low_OG.jpg"
+       data-search=" travis scott x air jordan 1 low og aj1 乔1倒勾低帮 dm7866-201(a78c)">
+    <img loading="lazy" src="img_t/416972204a6f7264616e_521_Travis_Scott_x_Air_Jordan_1_Low_OG.jpg" alt="Travis Scott x Air Jordan 1 Low OG AJ1 乔1倒勾低帮 DM7866-201(A78C)">
     <div class="meta">
-      <div class="title">35-45</div>
+      <div class="title">Travis Scott x Air Jordan 1 Low OG AJ1 乔1倒勾低帮 DM7866-201(A78C)</div>
       
       
       <div class="cta">
-        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=35-45%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F5fb78bad202053414d4241_152_35-45.jpg">WhatsApp</a>
-        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=35-45%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F5fb78bad202053414d4241_152_35-45.jpg">Email</a>
+        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=Travis%20Scott%20x%20Air%20Jordan%201%20Low%20OG%20AJ1%20%E4%B9%941%E5%80%92%E5%8B%BE%E4%BD%8E%E5%B8%AE%20DM7866-201%28A78C%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_521_Travis_Scott_x_Air_Jordan_1_Low_OG.jpg">WhatsApp</a>
+        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=Travis%20Scott%20x%20Air%20Jordan%201%20Low%20OG%20AJ1%20%E4%B9%941%E5%80%92%E5%8B%BE%E4%BD%8E%E5%B8%AE%20DM7866-201%28A78C%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_521_Travis_Scott_x_Air_Jordan_1_Low_OG.jpg">Email</a>
       </div>
     </div>
   </div>
-  <div class="card" data-img="img/5fb78bad202053414d4241_153_35-45.jpg" data-title="35-45"
-       data-sku="" data-sizes="" data-msg="35-45
-图片: https://fzbn168-spec.github.io/AIF-Sports/img/5fb78bad202053414d4241_153_35-45.jpg"
-       data-search=" 35-45">
-    <img loading="lazy" src="img_t/5fb78bad202053414d4241_153_35-45.jpg" alt="35-45">
+  <div class="card" data-img="img/416972204a6f7264616e_522_Travis_Scott_x_Air_Jordan_1_Low_OG.jpg" data-title="Travis Scott x Air Jordan 1 Low OG AJ1 乔1倒勾低帮 DM7866-106(E3D3)"
+       data-sku="" data-sizes="" data-msg="Travis Scott x Air Jordan 1 Low OG AJ1 乔1倒勾低帮 DM7866-106(E3D3)
+图片: https://fzbn168-spec.github.io/AIF-Sports/gallery/img/416972204a6f7264616e_522_Travis_Scott_x_Air_Jordan_1_Low_OG.jpg"
+       data-search=" travis scott x air jordan 1 low og aj1 乔1倒勾低帮 dm7866-106(e3d3)">
+    <img loading="lazy" src="img_t/416972204a6f7264616e_522_Travis_Scott_x_Air_Jordan_1_Low_OG.jpg" alt="Travis Scott x Air Jordan 1 Low OG AJ1 乔1倒勾低帮 DM7866-106(E3D3)">
     <div class="meta">
-      <div class="title">35-45</div>
+      <div class="title">Travis Scott x Air Jordan 1 Low OG AJ1 乔1倒勾低帮 DM7866-106(E3D3)</div>
       
       
       <div class="cta">
-        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=35-45%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F5fb78bad202053414d4241_153_35-45.jpg">WhatsApp</a>
-        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=35-45%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F5fb78bad202053414d4241_153_35-45.jpg">Email</a>
+        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=Travis%20Scott%20x%20Air%20Jordan%201%20Low%20OG%20AJ1%20%E4%B9%941%E5%80%92%E5%8B%BE%E4%BD%8E%E5%B8%AE%20DM7866-106%28E3D3%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_522_Travis_Scott_x_Air_Jordan_1_Low_OG.jpg">WhatsApp</a>
+        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=Travis%20Scott%20x%20Air%20Jordan%201%20Low%20OG%20AJ1%20%E4%B9%941%E5%80%92%E5%8B%BE%E4%BD%8E%E5%B8%AE%20DM7866-106%28E3D3%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_522_Travis_Scott_x_Air_Jordan_1_Low_OG.jpg">Email</a>
       </div>
     </div>
   </div>
-  <div class="card" data-img="img/5fb78bad202053414d4241_154_35-45.jpg" data-title="35-45"
-       data-sku="" data-sizes="" data-msg="35-45
-图片: https://fzbn168-spec.github.io/AIF-Sports/img/5fb78bad202053414d4241_154_35-45.jpg"
-       data-search=" 35-45">
-    <img loading="lazy" src="img_t/5fb78bad202053414d4241_154_35-45.jpg" alt="35-45">
+  <div class="card" data-img="img/416972204a6f7264616e_523_Travis_Scott_x_Air_Jordan_1_Low_OG.jpg" data-title="Travis Scott x Air Jordan 1 Low OG AJ1 乔1倒勾低帮 DM7866-104(AA8E)"
+       data-sku="" data-sizes="" data-msg="Travis Scott x Air Jordan 1 Low OG AJ1 乔1倒勾低帮 DM7866-104(AA8E)
+图片: https://fzbn168-spec.github.io/AIF-Sports/gallery/img/416972204a6f7264616e_523_Travis_Scott_x_Air_Jordan_1_Low_OG.jpg"
+       data-search=" travis scott x air jordan 1 low og aj1 乔1倒勾低帮 dm7866-104(aa8e)">
+    <img loading="lazy" src="img_t/416972204a6f7264616e_523_Travis_Scott_x_Air_Jordan_1_Low_OG.jpg" alt="Travis Scott x Air Jordan 1 Low OG AJ1 乔1倒勾低帮 DM7866-104(AA8E)">
     <div class="meta">
-      <div class="title">35-45</div>
+      <div class="title">Travis Scott x Air Jordan 1 Low OG AJ1 乔1倒勾低帮 DM7866-104(AA8E)</div>
       
       
       <div class="cta">
-        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=35-45%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F5fb78bad202053414d4241_154_35-45.jpg">WhatsApp</a>
-        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=35-45%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F5fb78bad202053414d4241_154_35-45.jpg">Email</a>
+        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=Travis%20Scott%20x%20Air%20Jordan%201%20Low%20OG%20AJ1%20%E4%B9%941%E5%80%92%E5%8B%BE%E4%BD%8E%E5%B8%AE%20DM7866-104%28AA8E%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_523_Travis_Scott_x_Air_Jordan_1_Low_OG.jpg">WhatsApp</a>
+        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=Travis%20Scott%20x%20Air%20Jordan%201%20Low%20OG%20AJ1%20%E4%B9%941%E5%80%92%E5%8B%BE%E4%BD%8E%E5%B8%AE%20DM7866-104%28AA8E%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_523_Travis_Scott_x_Air_Jordan_1_Low_OG.jpg">Email</a>
       </div>
     </div>
   </div>
-  <div class="card" data-img="img/5fb78bad202053414d4241_155_%E7%99%BD%E9%BB%91%E5%8D%B036-45%E5%B8%A6%E5%8D%8A%E7%A0%81_FW2427_.jpg" data-title="白黑印36-45带半码（FW2427）"
-       data-sku="FW2427" data-sizes="" data-msg="FW2427 白黑印36-45带半码（FW2427）
-图片: https://fzbn168-spec.github.io/AIF-Sports/img/5fb78bad202053414d4241_155_白黑印36-45带半码_FW2427_.jpg"
-       data-search="fw2427 白黑印36-45带半码（fw2427）">
-    <img loading="lazy" src="img_t/5fb78bad202053414d4241_155_%E7%99%BD%E9%BB%91%E5%8D%B036-45%E5%B8%A6%E5%8D%8A%E7%A0%81_FW2427_.jpg" alt="白黑印36-45带半码（FW2427）">
+  <div class="card" data-img="img/416972204a6f7264616e_524_Travis_Scott_x_Air_Jordan_1_Low_OG.jpg" data-title="Travis Scott x Air Jordan 1 Low OG AJ1 乔1倒勾低帮 DM7866-101(C33B)"
+       data-sku="" data-sizes="" data-msg="Travis Scott x Air Jordan 1 Low OG AJ1 乔1倒勾低帮 DM7866-101(C33B)
+图片: https://fzbn168-spec.github.io/AIF-Sports/gallery/img/416972204a6f7264616e_524_Travis_Scott_x_Air_Jordan_1_Low_OG.jpg"
+       data-search=" travis scott x air jordan 1 low og aj1 乔1倒勾低帮 dm7866-101(c33b)">
+    <img loading="lazy" src="img_t/416972204a6f7264616e_524_Travis_Scott_x_Air_Jordan_1_Low_OG.jpg" alt="Travis Scott x Air Jordan 1 Low OG AJ1 乔1倒勾低帮 DM7866-101(C33B)">
     <div class="meta">
-      <div class="title">白黑印36-45带半码（FW2427）</div>
-      <div class="sku">FW2427</div>
+      <div class="title">Travis Scott x Air Jordan 1 Low OG AJ1 乔1倒勾低帮 DM7866-101(C33B)</div>
+      
       
       <div class="cta">
-        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=FW2427%20%E7%99%BD%E9%BB%91%E5%8D%B036-45%E5%B8%A6%E5%8D%8A%E7%A0%81%EF%BC%88FW2427%EF%BC%89%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F5fb78bad202053414d4241_155_%E7%99%BD%E9%BB%91%E5%8D%B036-45%E5%B8%A6%E5%8D%8A%E7%A0%81_FW2427_.jpg">WhatsApp</a>
-        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=FW2427%20%E7%99%BD%E9%BB%91%E5%8D%B036-45%E5%B8%A6%E5%8D%8A%E7%A0%81%EF%BC%88FW2427%EF%BC%89%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F5fb78bad202053414d4241_155_%E7%99%BD%E9%BB%91%E5%8D%B036-45%E5%B8%A6%E5%8D%8A%E7%A0%81_FW2427_.jpg">Email</a>
+        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=Travis%20Scott%20x%20Air%20Jordan%201%20Low%20OG%20AJ1%20%E4%B9%941%E5%80%92%E5%8B%BE%E4%BD%8E%E5%B8%AE%20DM7866-101%28C33B%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_524_Travis_Scott_x_Air_Jordan_1_Low_OG.jpg">WhatsApp</a>
+        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=Travis%20Scott%20x%20Air%20Jordan%201%20Low%20OG%20AJ1%20%E4%B9%941%E5%80%92%E5%8B%BE%E4%BD%8E%E5%B8%AE%20DM7866-101%28C33B%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_524_Travis_Scott_x_Air_Jordan_1_Low_OG.jpg">Email</a>
       </div>
     </div>
   </div>
-  <div class="card" data-img="img/5fb78bad202053414d4241_156_%E7%99%BD%E7%BB%BF36-45%E5%B8%A6%E5%8D%8A%E7%A0%81_IG1024_.jpg" data-title="白绿36-45带半码（IG1024）"
-       data-sku="IG1024" data-sizes="" data-msg="IG1024 白绿36-45带半码（IG1024）
-图片: https://fzbn168-spec.github.io/AIF-Sports/img/5fb78bad202053414d4241_156_白绿36-45带半码_IG1024_.jpg"
-       data-search="ig1024 白绿36-45带半码（ig1024）">
-    <img loading="lazy" src="img_t/5fb78bad202053414d4241_156_%E7%99%BD%E7%BB%BF36-45%E5%B8%A6%E5%8D%8A%E7%A0%81_IG1024_.jpg" alt="白绿36-45带半码（IG1024）">
+  <div class="card" data-img="img/416972204a6f7264616e_525_Travis_Scott_x_Air_Jordan_1_Low_OG.jpg" data-title="Travis Scott x Air Jordan 1 Low OG AJ1 乔1倒勾低帮 DM7866-100(B564)"
+       data-sku="" data-sizes="" data-msg="Travis Scott x Air Jordan 1 Low OG AJ1 乔1倒勾低帮 DM7866-100(B564)
+图片: https://fzbn168-spec.github.io/AIF-Sports/gallery/img/416972204a6f7264616e_525_Travis_Scott_x_Air_Jordan_1_Low_OG.jpg"
+       data-search=" travis scott x air jordan 1 low og aj1 乔1倒勾低帮 dm7866-100(b564)">
+    <img loading="lazy" src="img_t/416972204a6f7264616e_525_Travis_Scott_x_Air_Jordan_1_Low_OG.jpg" alt="Travis Scott x Air Jordan 1 Low OG AJ1 乔1倒勾低帮 DM7866-100(B564)">
     <div class="meta">
-      <div class="title">白绿36-45带半码（IG1024）</div>
-      <div class="sku">IG1024</div>
+      <div class="title">Travis Scott x Air Jordan 1 Low OG AJ1 乔1倒勾低帮 DM7866-100(B564)</div>
+      
       
       <div class="cta">
-        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=IG1024%20%E7%99%BD%E7%BB%BF36-45%E5%B8%A6%E5%8D%8A%E7%A0%81%EF%BC%88IG1024%EF%BC%89%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F5fb78bad202053414d4241_156_%E7%99%BD%E7%BB%BF36-45%E5%B8%A6%E5%8D%8A%E7%A0%81_IG1024_.jpg">WhatsApp</a>
-        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=IG1024%20%E7%99%BD%E7%BB%BF36-45%E5%B8%A6%E5%8D%8A%E7%A0%81%EF%BC%88IG1024%EF%BC%89%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F5fb78bad202053414d4241_156_%E7%99%BD%E7%BB%BF36-45%E5%B8%A6%E5%8D%8A%E7%A0%81_IG1024_.jpg">Email</a>
+        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=Travis%20Scott%20x%20Air%20Jordan%201%20Low%20OG%20AJ1%20%E4%B9%941%E5%80%92%E5%8B%BE%E4%BD%8E%E5%B8%AE%20DM7866-100%28B564%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_525_Travis_Scott_x_Air_Jordan_1_Low_OG.jpg">WhatsApp</a>
+        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=Travis%20Scott%20x%20Air%20Jordan%201%20Low%20OG%20AJ1%20%E4%B9%941%E5%80%92%E5%8B%BE%E4%BD%8E%E5%B8%AE%20DM7866-100%28B564%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_525_Travis_Scott_x_Air_Jordan_1_Low_OG.jpg">Email</a>
       </div>
     </div>
   </div>
-  <div class="card" data-img="img/5fb78bad202053414d4241_157_%E5%85%A8%E7%99%BD36-45%E5%B8%A6%E5%8D%8A%E7%A0%81_HQ7032_.jpg" data-title="全白36-45带半码（HQ7032）"
-       data-sku="HQ7032" data-sizes="" data-msg="HQ7032 全白36-45带半码（HQ7032）
-图片: https://fzbn168-spec.github.io/AIF-Sports/img/5fb78bad202053414d4241_157_全白36-45带半码_HQ7032_.jpg"
-       data-search="hq7032 全白36-45带半码（hq7032）">
-    <img loading="lazy" src="img_t/5fb78bad202053414d4241_157_%E5%85%A8%E7%99%BD36-45%E5%B8%A6%E5%8D%8A%E7%A0%81_HQ7032_.jpg" alt="全白36-45带半码（HQ7032）">
+  <div class="card" data-img="img/416972204a6f7264616e_526_Travis_Scott_x_Fragment_Design_x_A.jpg" data-title="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1斯图西联名 浅灰印花 低帮文化休闲板(2A10)"
+       data-sku="" data-sizes="" data-msg="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1斯图西联名 浅灰印花 低帮文化休闲板(2A10)
+图片: https://fzbn168-spec.github.io/AIF-Sports/gallery/img/416972204a6f7264616e_526_Travis_Scott_x_Fragment_Design_x_A.jpg"
+       data-search=" travis scott x fragment design x air jordan 1 low og sp aj1 乔1斯图西联名 浅灰印花 低帮文化休闲板(2a10)">
+    <img loading="lazy" src="img_t/416972204a6f7264616e_526_Travis_Scott_x_Fragment_Design_x_A.jpg" alt="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1斯图西联名 浅灰印花 低帮文化休闲板(2A10)">
     <div class="meta">
-      <div class="title">全白36-45带半码（HQ7032）</div>
-      <div class="sku">HQ7032</div>
+      <div class="title">Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1斯图西联名 浅灰印花 低帮文化休闲板(2A10)</div>
+      
       
       <div class="cta">
-        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=HQ7032%20%E5%85%A8%E7%99%BD36-45%E5%B8%A6%E5%8D%8A%E7%A0%81%EF%BC%88HQ7032%EF%BC%89%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F5fb78bad202053414d4241_157_%E5%85%A8%E7%99%BD36-45%E5%B8%A6%E5%8D%8A%E7%A0%81_HQ7032_.jpg">WhatsApp</a>
-        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=HQ7032%20%E5%85%A8%E7%99%BD36-45%E5%B8%A6%E5%8D%8A%E7%A0%81%EF%BC%88HQ7032%EF%BC%89%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F5fb78bad202053414d4241_157_%E5%85%A8%E7%99%BD36-45%E5%B8%A6%E5%8D%8A%E7%A0%81_HQ7032_.jpg">Email</a>
+        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E4%B9%941%E6%96%AF%E5%9B%BE%E8%A5%BF%E8%81%94%E5%90%8D%20%E6%B5%85%E7%81%B0%E5%8D%B0%E8%8A%B1%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E6%9D%BF%282A10%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_526_Travis_Scott_x_Fragment_Design_x_A.jpg">WhatsApp</a>
+        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E4%B9%941%E6%96%AF%E5%9B%BE%E8%A5%BF%E8%81%94%E5%90%8D%20%E6%B5%85%E7%81%B0%E5%8D%B0%E8%8A%B1%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E6%9D%BF%282A10%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_526_Travis_Scott_x_Fragment_Design_x_A.jpg">Email</a>
       </div>
     </div>
   </div>
-  <div class="card" data-img="img/5fb78bad202053414d4241_158_%E7%99%BD%E8%93%9D36-45%E5%B8%A6%E5%8D%8A%E7%A0%81_ID2055_.jpg" data-title="白蓝36-45带半码（ID2055）"
-       data-sku="ID2055" data-sizes="" data-msg="ID2055 白蓝36-45带半码（ID2055）
-图片: https://fzbn168-spec.github.io/AIF-Sports/img/5fb78bad202053414d4241_158_白蓝36-45带半码_ID2055_.jpg"
-       data-search="id2055 白蓝36-45带半码（id2055）">
-    <img loading="lazy" src="img_t/5fb78bad202053414d4241_158_%E7%99%BD%E8%93%9D36-45%E5%B8%A6%E5%8D%8A%E7%A0%81_ID2055_.jpg" alt="白蓝36-45带半码（ID2055）">
+  <div class="card" data-img="img/416972204a6f7264616e_527_Travis_Scott_x_Fragment_Design_x_A.jpg" data-title="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1双拼黑花勾 低帮文化休闲板鞋 CX5(BA14)"
+       data-sku="" data-sizes="" data-msg="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1双拼黑花勾 低帮文化休闲板鞋 CX5(BA14)
+图片: https://fzbn168-spec.github.io/AIF-Sports/gallery/img/416972204a6f7264616e_527_Travis_Scott_x_Fragment_Design_x_A.jpg"
+       data-search=" travis scott x fragment design x air jordan 1 low og sp aj1 乔1双拼黑花勾 低帮文化休闲板鞋 cx5(ba14)">
+    <img loading="lazy" src="img_t/416972204a6f7264616e_527_Travis_Scott_x_Fragment_Design_x_A.jpg" alt="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1双拼黑花勾 低帮文化休闲板鞋 CX5(BA14)">
     <div class="meta">
-      <div class="title">白蓝36-45带半码（ID2055）</div>
-      <div class="sku">ID2055</div>
+      <div class="title">Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1双拼黑花勾 低帮文化休闲板鞋 CX5(BA14)</div>
+      
       
       <div class="cta">
-        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=ID2055%20%E7%99%BD%E8%93%9D36-45%E5%B8%A6%E5%8D%8A%E7%A0%81%EF%BC%88ID2055%EF%BC%89%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F5fb78bad202053414d4241_158_%E7%99%BD%E8%93%9D36-45%E5%B8%A6%E5%8D%8A%E7%A0%81_ID2055_.jpg">WhatsApp</a>
-        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=ID2055%20%E7%99%BD%E8%93%9D36-45%E5%B8%A6%E5%8D%8A%E7%A0%81%EF%BC%88ID2055%EF%BC%89%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F5fb78bad202053414d4241_158_%E7%99%BD%E8%93%9D36-45%E5%B8%A6%E5%8D%8A%E7%A0%81_ID2055_.jpg">Email</a>
+        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E4%B9%941%E5%8F%8C%E6%8B%BC%E9%BB%91%E8%8A%B1%E5%8B%BE%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E6%9D%BF%E9%9E%8B%20CX5%28BA14%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_527_Travis_Scott_x_Fragment_Design_x_A.jpg">WhatsApp</a>
+        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E4%B9%941%E5%8F%8C%E6%8B%BC%E9%BB%91%E8%8A%B1%E5%8B%BE%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E6%9D%BF%E9%9E%8B%20CX5%28BA14%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_527_Travis_Scott_x_Fragment_Design_x_A.jpg">Email</a>
       </div>
     </div>
   </div>
-  <div class="card" data-img="img/5fb78bad202053414d4241_159_%E8%97%8F%E9%9D%9236-45%E5%B8%A6%E5%8D%8A%E7%A0%81_ID2056_.jpg" data-title="藏青36-45带半码（ID2056）"
-       data-sku="ID2056" data-sizes="" data-msg="ID2056 藏青36-45带半码（ID2056）
-图片: https://fzbn168-spec.github.io/AIF-Sports/img/5fb78bad202053414d4241_159_藏青36-45带半码_ID2056_.jpg"
-       data-search="id2056 藏青36-45带半码（id2056）">
-    <img loading="lazy" src="img_t/5fb78bad202053414d4241_159_%E8%97%8F%E9%9D%9236-45%E5%B8%A6%E5%8D%8A%E7%A0%81_ID2056_.jpg" alt="藏青36-45带半码（ID2056）">
+  <div class="card" data-img="img/416972204a6f7264616e_528_Travis_Scott_x_Fragment_Design_x_A.jpg" data-title="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1闪电联名 米白黑 低帮文化休闲板鞋(0201)"
+       data-sku="" data-sizes="" data-msg="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1闪电联名 米白黑 低帮文化休闲板鞋(0201)
+图片: https://fzbn168-spec.github.io/AIF-Sports/gallery/img/416972204a6f7264616e_528_Travis_Scott_x_Fragment_Design_x_A.jpg"
+       data-search=" travis scott x fragment design x air jordan 1 low og sp aj1 乔1闪电联名 米白黑 低帮文化休闲板鞋(0201)">
+    <img loading="lazy" src="img_t/416972204a6f7264616e_528_Travis_Scott_x_Fragment_Design_x_A.jpg" alt="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1闪电联名 米白黑 低帮文化休闲板鞋(0201)">
     <div class="meta">
-      <div class="title">藏青36-45带半码（ID2056）</div>
-      <div class="sku">ID2056</div>
+      <div class="title">Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1闪电联名 米白黑 低帮文化休闲板鞋(0201)</div>
+      
       
       <div class="cta">
-        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=ID2056%20%E8%97%8F%E9%9D%9236-45%E5%B8%A6%E5%8D%8A%E7%A0%81%EF%BC%88ID2056%EF%BC%89%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F5fb78bad202053414d4241_159_%E8%97%8F%E9%9D%9236-45%E5%B8%A6%E5%8D%8A%E7%A0%81_ID2056_.jpg">WhatsApp</a>
-        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=ID2056%20%E8%97%8F%E9%9D%9236-45%E5%B8%A6%E5%8D%8A%E7%A0%81%EF%BC%88ID2056%EF%BC%89%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F5fb78bad202053414d4241_159_%E8%97%8F%E9%9D%9236-45%E5%B8%A6%E5%8D%8A%E7%A0%81_ID2056_.jpg">Email</a>
+        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E4%B9%941%E9%97%AA%E7%94%B5%E8%81%94%E5%90%8D%20%E7%B1%B3%E7%99%BD%E9%BB%91%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E6%9D%BF%E9%9E%8B%280201%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_528_Travis_Scott_x_Fragment_Design_x_A.jpg">WhatsApp</a>
+        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E4%B9%941%E9%97%AA%E7%94%B5%E8%81%94%E5%90%8D%20%E7%B1%B3%E7%99%BD%E9%BB%91%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E6%9D%BF%E9%9E%8B%280201%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_528_Travis_Scott_x_Fragment_Design_x_A.jpg">Email</a>
       </div>
     </div>
   </div>
-  <div class="card" data-img="img/5fb78bad202053414d4241_160_%E7%99%BD%E7%B2%8936-40%E5%B8%A6%E5%8D%8A%E7%A0%81_IG5932_.jpg" data-title="白粉36-40带半码（IG5932）"
-       data-sku="IG5932" data-sizes="" data-msg="IG5932 白粉36-40带半码（IG5932）
-图片: https://fzbn168-spec.github.io/AIF-Sports/img/5fb78bad202053414d4241_160_白粉36-40带半码_IG5932_.jpg"
-       data-search="ig5932 白粉36-40带半码（ig5932）">
-    <img loading="lazy" src="img_t/5fb78bad202053414d4241_160_%E7%99%BD%E7%B2%8936-40%E5%B8%A6%E5%8D%8A%E7%A0%81_IG5932_.jpg" alt="白粉36-40带半码（IG5932）">
+  <div class="card" data-img="img/416972204a6f7264616e_529_Travis_Scott_x_Fragment_Design_x_A.jpg" data-title="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1闪电联名 低帮文化休闲板鞋 LK10(C9C9)"
+       data-sku="" data-sizes="" data-msg="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1闪电联名 低帮文化休闲板鞋 LK10(C9C9)
+图片: https://fzbn168-spec.github.io/AIF-Sports/gallery/img/416972204a6f7264616e_529_Travis_Scott_x_Fragment_Design_x_A.jpg"
+       data-search=" travis scott x fragment design x air jordan 1 low og sp aj1 乔1闪电联名 低帮文化休闲板鞋 lk10(c9c9)">
+    <img loading="lazy" src="img_t/416972204a6f7264616e_529_Travis_Scott_x_Fragment_Design_x_A.jpg" alt="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1闪电联名 低帮文化休闲板鞋 LK10(C9C9)">
     <div class="meta">
-      <div class="title">白粉36-40带半码（IG5932）</div>
-      <div class="sku">IG5932</div>
+      <div class="title">Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1闪电联名 低帮文化休闲板鞋 LK10(C9C9)</div>
+      
       
       <div class="cta">
-        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=IG5932%20%E7%99%BD%E7%B2%8936-40%E5%B8%A6%E5%8D%8A%E7%A0%81%EF%BC%88IG5932%EF%BC%89%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F5fb78bad202053414d4241_160_%E7%99%BD%E7%B2%8936-40%E5%B8%A6%E5%8D%8A%E7%A0%81_IG5932_.jpg">WhatsApp</a>
-        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=IG5932%20%E7%99%BD%E7%B2%8936-40%E5%B8%A6%E5%8D%8A%E7%A0%81%EF%BC%88IG5932%EF%BC%89%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F5fb78bad202053414d4241_160_%E7%99%BD%E7%B2%8936-40%E5%B8%A6%E5%8D%8A%E7%A0%81_IG5932_.jpg">Email</a>
+        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E4%B9%941%E9%97%AA%E7%94%B5%E8%81%94%E5%90%8D%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E6%9D%BF%E9%9E%8B%20LK10%28C9C9%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_529_Travis_Scott_x_Fragment_Design_x_A.jpg">WhatsApp</a>
+        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E4%B9%941%E9%97%AA%E7%94%B5%E8%81%94%E5%90%8D%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E6%9D%BF%E9%9E%8B%20LK10%28C9C9%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_529_Travis_Scott_x_Fragment_Design_x_A.jpg">Email</a>
       </div>
     </div>
   </div>
-  <div class="card" data-img="img/414a314f4e5e2e209ad85c14592b207cfb521720_IR7600-211_Air_Jordan_1_Low_SE_BG_CN%E6%96%B0%E5%B9%B4%E7%B3%BB%E5%88%97_%E9%A9%AC%E5%B9%B4_A.jpg" data-title="Air Jordan 1 Low SE BG CN新年系列 马年 AJ1 乔一 时尚百搭 舒适防滑 低帮 复古篮球鞋 男女同款 米白红  货号：IR7600-211  Size： 36-46"
-       data-sku="IR7600-211" data-sizes="" data-msg="IR7600-211 Air Jordan 1 Low SE BG CN新年系列 马年 AJ1 乔一 时尚百搭 舒适防滑 低帮 复古篮球鞋 男女同款 米白红  货号：IR7600-211  Size： 36-46
-图片: https://fzbn168-spec.github.io/AIF-Sports/img/414a314f4e5e2e209ad85c14592b207cfb521720_IR7600-211_Air_Jordan_1_Low_SE_BG_CN新年系列_马年_A.jpg"
-       data-search="ir7600-211 air jordan 1 low se bg cn新年系列 马年 aj1 乔一 时尚百搭 舒适防滑 低帮 复古篮球鞋 男女同款 米白红  货号：ir7600-211  size： 36-46">
-    <img loading="lazy" src="img_t/414a314f4e5e2e209ad85c14592b207cfb521720_IR7600-211_Air_Jordan_1_Low_SE_BG_CN%E6%96%B0%E5%B9%B4%E7%B3%BB%E5%88%97_%E9%A9%AC%E5%B9%B4_A.jpg" alt="Air Jordan 1 Low SE BG CN新年系列 马年 AJ1 乔一 时尚百搭 舒适防滑 低帮 复古篮球鞋 男女同款 米白红  货号：IR7600-211  Size： 36-46">
+  <div class="card" data-img="img/416972204a6f7264616e_530_Travis_Scott_x_Fragment_Design_x_A.jpg" data-title="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1权志龙联名 雏菊米灰黑 低帮文化休闲(CD36)"
+       data-sku="" data-sizes="" data-msg="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1权志龙联名 雏菊米灰黑 低帮文化休闲(CD36)
+图片: https://fzbn168-spec.github.io/AIF-Sports/gallery/img/416972204a6f7264616e_530_Travis_Scott_x_Fragment_Design_x_A.jpg"
+       data-search=" travis scott x fragment design x air jordan 1 low og sp aj1 乔1权志龙联名 雏菊米灰黑 低帮文化休闲(cd36)">
+    <img loading="lazy" src="img_t/416972204a6f7264616e_530_Travis_Scott_x_Fragment_Design_x_A.jpg" alt="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1权志龙联名 雏菊米灰黑 低帮文化休闲(CD36)">
     <div class="meta">
-      <div class="title">Air Jordan 1 Low SE BG CN新年系列 马年 AJ1 乔一 时尚百搭 舒适防滑 低帮 复古篮球鞋 男女同款 米白红  货号：IR7600-211  Size： 36-46</div>
-      <div class="sku">IR7600-211</div>
+      <div class="title">Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1权志龙联名 雏菊米灰黑 低帮文化休闲(CD36)</div>
+      
       
       <div class="cta">
-        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=IR7600-211%20Air%20Jordan%201%20Low%20SE%20BG%20CN%E6%96%B0%E5%B9%B4%E7%B3%BB%E5%88%97%20%E9%A9%AC%E5%B9%B4%20AJ1%20%E4%B9%94%E4%B8%80%20%E6%97%B6%E5%B0%9A%E7%99%BE%E6%90%AD%20%E8%88%92%E9%80%82%E9%98%B2%E6%BB%91%20%E4%BD%8E%E5%B8%AE%20%E5%A4%8D%E5%8F%A4%E7%AF%AE%E7%90%83%E9%9E%8B%20%E7%94%B7%E5%A5%B3%E5%90%8C%E6%AC%BE%20%E7%B1%B3%E7%99%BD%E7%BA%A2%20%20%E8%B4%A7%E5%8F%B7%EF%BC%9AIR7600-211%20%20Size%EF%BC%9A%2036-46%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F414a314f4e5e2e209ad85c14592b207cfb521720_IR7600-211_Air_Jordan_1_Low_SE_BG_CN%E6%96%B0%E5%B9%B4%E7%B3%BB%E5%88%97_%E9%A9%AC%E5%B9%B4_A.jpg">WhatsApp</a>
-        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=IR7600-211%20Air%20Jordan%201%20Low%20SE%20BG%20CN%E6%96%B0%E5%B9%B4%E7%B3%BB%E5%88%97%20%E9%A9%AC%E5%B9%B4%20AJ1%20%E4%B9%94%E4%B8%80%20%E6%97%B6%E5%B0%9A%E7%99%BE%E6%90%AD%20%E8%88%92%E9%80%82%E9%98%B2%E6%BB%91%20%E4%BD%8E%E5%B8%AE%20%E5%A4%8D%E5%8F%A4%E7%AF%AE%E7%90%83%E9%9E%8B%20%E7%94%B7%E5%A5%B3%E5%90%8C%E6%AC%BE%20%E7%B1%B3%E7%99%BD%E7%BA%A2%20%20%E8%B4%A7%E5%8F%B7%EF%BC%9AIR7600-211%20%20Size%EF%BC%9A%2036-46%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F414a314f4e5e2e209ad85c14592b207cfb521720_IR7600-211_Air_Jordan_1_Low_SE_BG_CN%E6%96%B0%E5%B9%B4%E7%B3%BB%E5%88%97_%E9%A9%AC%E5%B9%B4_A.jpg">Email</a>
+        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E4%B9%941%E6%9D%83%E5%BF%97%E9%BE%99%E8%81%94%E5%90%8D%20%E9%9B%8F%E8%8F%8A%E7%B1%B3%E7%81%B0%E9%BB%91%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%28CD36%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_530_Travis_Scott_x_Fragment_Design_x_A.jpg">WhatsApp</a>
+        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E4%B9%941%E6%9D%83%E5%BF%97%E9%BE%99%E8%81%94%E5%90%8D%20%E9%9B%8F%E8%8F%8A%E7%B1%B3%E7%81%B0%E9%BB%91%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%28CD36%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_530_Travis_Scott_x_Fragment_Design_x_A.jpg">Email</a>
       </div>
     </div>
   </div>
-  <div class="card" data-img="img/414a314f4e5e2e209ad85c14592b207cfb521720_IR0842-010_Air_Jordan_1_Low_Black_Denim_%E7%89%9B%E4%BB%94%E9%A3%8E%E6%9D%80.jpg" data-title="Air Jordan 1 Low “Black Denim”牛仔风杀疯了！AJ1「黑色牛仔布」质感不一般！ 货号：IR0842-010 码数：36-46"
-       data-sku="IR0842-010" data-sizes="36-46" data-msg="IR0842-010 Air Jordan 1 Low “Black Denim”牛仔风杀疯了！AJ1「黑色牛仔布」质感不一般！ 货号：IR0842-010 码数：36-46 (Sizes: EU 36-46)
-图片: https://fzbn168-spec.github.io/AIF-Sports/img/414a314f4e5e2e209ad85c14592b207cfb521720_IR0842-010_Air_Jordan_1_Low_Black_Denim_牛仔风杀.jpg"
-       data-search="ir0842-010 air jordan 1 low “black denim”牛仔风杀疯了！aj1「黑色牛仔布」质感不一般！ 货号：ir0842-010 码数：36-46">
-    <img loading="lazy" src="img_t/414a314f4e5e2e209ad85c14592b207cfb521720_IR0842-010_Air_Jordan_1_Low_Black_Denim_%E7%89%9B%E4%BB%94%E9%A3%8E%E6%9D%80.jpg" alt="Air Jordan 1 Low “Black Denim”牛仔风杀疯了！AJ1「黑色牛仔布」质感不一般！ 货号：IR0842-010 码数：36-46">
+  <div class="card" data-img="img/416972204a6f7264616e_531_Travis_Scott_x_Fragment_Design_x_A.jpg" data-title="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1亲友限定 纯白 低帮文化休闲板鞋 T(4E5C)"
+       data-sku="" data-sizes="" data-msg="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1亲友限定 纯白 低帮文化休闲板鞋 T(4E5C)
+图片: https://fzbn168-spec.github.io/AIF-Sports/gallery/img/416972204a6f7264616e_531_Travis_Scott_x_Fragment_Design_x_A.jpg"
+       data-search=" travis scott x fragment design x air jordan 1 low og sp aj1 乔1亲友限定 纯白 低帮文化休闲板鞋 t(4e5c)">
+    <img loading="lazy" src="img_t/416972204a6f7264616e_531_Travis_Scott_x_Fragment_Design_x_A.jpg" alt="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1亲友限定 纯白 低帮文化休闲板鞋 T(4E5C)">
     <div class="meta">
-      <div class="title">Air Jordan 1 Low “Black Denim”牛仔风杀疯了！AJ1「黑色牛仔布」质感不一般！ 货号：IR0842-010 码数：36-46</div>
-      <div class="sku">IR0842-010</div>
-      <div class="sizes">Sizes: EU 36-46</div>
-      <div class="cta">
-        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=IR0842-010%20Air%20Jordan%201%20Low%20%E2%80%9CBlack%20Denim%E2%80%9D%E7%89%9B%E4%BB%94%E9%A3%8E%E6%9D%80%E7%96%AF%E4%BA%86%EF%BC%81AJ1%E3%80%8C%E9%BB%91%E8%89%B2%E7%89%9B%E4%BB%94%E5%B8%83%E3%80%8D%E8%B4%A8%E6%84%9F%E4%B8%8D%E4%B8%80%E8%88%AC%EF%BC%81%20%E8%B4%A7%E5%8F%B7%EF%BC%9AIR0842-010%20%E7%A0%81%E6%95%B0%EF%BC%9A36-46%20%28Sizes%3A%20EU%2036-46%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F414a314f4e5e2e209ad85c14592b207cfb521720_IR0842-010_Air_Jordan_1_Low_Black_Denim_%E7%89%9B%E4%BB%94%E9%A3%8E%E6%9D%80.jpg">WhatsApp</a>
-        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=IR0842-010%20Air%20Jordan%201%20Low%20%E2%80%9CBlack%20Denim%E2%80%9D%E7%89%9B%E4%BB%94%E9%A3%8E%E6%9D%80%E7%96%AF%E4%BA%86%EF%BC%81AJ1%E3%80%8C%E9%BB%91%E8%89%B2%E7%89%9B%E4%BB%94%E5%B8%83%E3%80%8D%E8%B4%A8%E6%84%9F%E4%B8%8D%E4%B8%80%E8%88%AC%EF%BC%81%20%E8%B4%A7%E5%8F%B7%EF%BC%9AIR0842-010%20%E7%A0%81%E6%95%B0%EF%BC%9A36-46%20%28Sizes%3A%20EU%2036-46%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F414a314f4e5e2e209ad85c14592b207cfb521720_IR0842-010_Air_Jordan_1_Low_Black_Denim_%E7%89%9B%E4%BB%94%E9%A3%8E%E6%9D%80.jpg">Email</a>
-      </div>
-    </div>
-  </div>
-  <div class="card" data-img="img/414a314f4e5e2e209ad85c14592b207cfb521720_IO7448-400_Air_Jordan_1_Low_SE_AJ1_%E4%B9%94%E4%B8%80_%E8%88%92%E9%80%82%E8%B4%B4%E5%90%88_%E9%98%B2%E6%BB%91.jpg" data-title="Air Jordan 1 Low SE AJ1 乔一 舒适贴合 防滑耐磨 低帮 复古篮球鞋 男女同款 海军蓝 货号：IO7448-400 Size: 36-46"
-       data-sku="IO7448-400" data-sizes="" data-msg="IO7448-400 Air Jordan 1 Low SE AJ1 乔一 舒适贴合 防滑耐磨 低帮 复古篮球鞋 男女同款 海军蓝 货号：IO7448-400 Size: 36-46
-图片: https://fzbn168-spec.github.io/AIF-Sports/img/414a314f4e5e2e209ad85c14592b207cfb521720_IO7448-400_Air_Jordan_1_Low_SE_AJ1_乔一_舒适贴合_防滑.jpg"
-       data-search="io7448-400 air jordan 1 low se aj1 乔一 舒适贴合 防滑耐磨 低帮 复古篮球鞋 男女同款 海军蓝 货号：io7448-400 size: 36-46">
-    <img loading="lazy" src="img_t/414a314f4e5e2e209ad85c14592b207cfb521720_IO7448-400_Air_Jordan_1_Low_SE_AJ1_%E4%B9%94%E4%B8%80_%E8%88%92%E9%80%82%E8%B4%B4%E5%90%88_%E9%98%B2%E6%BB%91.jpg" alt="Air Jordan 1 Low SE AJ1 乔一 舒适贴合 防滑耐磨 低帮 复古篮球鞋 男女同款 海军蓝 货号：IO7448-400 Size: 36-46">
-    <div class="meta">
-      <div class="title">Air Jordan 1 Low SE AJ1 乔一 舒适贴合 防滑耐磨 低帮 复古篮球鞋 男女同款 海军蓝 货号：IO7448-400 Size: 36-46</div>
-      <div class="sku">IO7448-400</div>
+      <div class="title">Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1亲友限定 纯白 低帮文化休闲板鞋 T(4E5C)</div>
+      
       
       <div class="cta">
-        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=IO7448-400%20Air%20Jordan%201%20Low%20SE%20AJ1%20%E4%B9%94%E4%B8%80%20%E8%88%92%E9%80%82%E8%B4%B4%E5%90%88%20%E9%98%B2%E6%BB%91%E8%80%90%E7%A3%A8%20%E4%BD%8E%E5%B8%AE%20%E5%A4%8D%E5%8F%A4%E7%AF%AE%E7%90%83%E9%9E%8B%20%E7%94%B7%E5%A5%B3%E5%90%8C%E6%AC%BE%20%E6%B5%B7%E5%86%9B%E8%93%9D%20%E8%B4%A7%E5%8F%B7%EF%BC%9AIO7448-400%20Size%3A%2036-46%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F414a314f4e5e2e209ad85c14592b207cfb521720_IO7448-400_Air_Jordan_1_Low_SE_AJ1_%E4%B9%94%E4%B8%80_%E8%88%92%E9%80%82%E8%B4%B4%E5%90%88_%E9%98%B2%E6%BB%91.jpg">WhatsApp</a>
-        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=IO7448-400%20Air%20Jordan%201%20Low%20SE%20AJ1%20%E4%B9%94%E4%B8%80%20%E8%88%92%E9%80%82%E8%B4%B4%E5%90%88%20%E9%98%B2%E6%BB%91%E8%80%90%E7%A3%A8%20%E4%BD%8E%E5%B8%AE%20%E5%A4%8D%E5%8F%A4%E7%AF%AE%E7%90%83%E9%9E%8B%20%E7%94%B7%E5%A5%B3%E5%90%8C%E6%AC%BE%20%E6%B5%B7%E5%86%9B%E8%93%9D%20%E8%B4%A7%E5%8F%B7%EF%BC%9AIO7448-400%20Size%3A%2036-46%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F414a314f4e5e2e209ad85c14592b207cfb521720_IO7448-400_Air_Jordan_1_Low_SE_AJ1_%E4%B9%94%E4%B8%80_%E8%88%92%E9%80%82%E8%B4%B4%E5%90%88_%E9%98%B2%E6%BB%91.jpg">Email</a>
+        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E4%B9%941%E4%BA%B2%E5%8F%8B%E9%99%90%E5%AE%9A%20%E7%BA%AF%E7%99%BD%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E6%9D%BF%E9%9E%8B%20T%284E5C%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_531_Travis_Scott_x_Fragment_Design_x_A.jpg">WhatsApp</a>
+        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E4%B9%941%E4%BA%B2%E5%8F%8B%E9%99%90%E5%AE%9A%20%E7%BA%AF%E7%99%BD%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E6%9D%BF%E9%9E%8B%20T%284E5C%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_531_Travis_Scott_x_Fragment_Design_x_A.jpg">Email</a>
       </div>
     </div>
   </div>
-  <div class="card" data-img="img/414a314f4e5e2e209ad85c14592b207cfb521720_004_Air_Jordan_1_Low_GS_White_Universi.jpg" data-title="Air Jordan 1 Low GS&quot;White/University Red&quot;AJ1乔丹一代低帮经典复古文化休闲运动篮球鞋DC0774-107 尺码：36-46"
-       data-sku="DC0774-107" data-sizes="36-46" data-msg="DC0774-107 Air Jordan 1 Low GS&quot;White/University Red&quot;AJ1乔丹一代低帮经典复古文化休闲运动篮球鞋DC0774-107 尺码：36-46 (Sizes: EU 36-46)
-图片: https://fzbn168-spec.github.io/AIF-Sports/img/414a314f4e5e2e209ad85c14592b207cfb521720_004_Air_Jordan_1_Low_GS_White_Universi.jpg"
-       data-search="dc0774-107 air jordan 1 low gs&quot;white/university red&quot;aj1乔丹一代低帮经典复古文化休闲运动篮球鞋dc0774-107 尺码：36-46">
-    <img loading="lazy" src="img_t/414a314f4e5e2e209ad85c14592b207cfb521720_004_Air_Jordan_1_Low_GS_White_Universi.jpg" alt="Air Jordan 1 Low GS&quot;White/University Red&quot;AJ1乔丹一代低帮经典复古文化休闲运动篮球鞋DC0774-107 尺码：36-46">
+  <div class="card" data-img="img/416972204a6f7264616e_532_Travis_Scott_x_Fragment_Design_x_A.jpg" data-title="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1米白Nike蓝 低帮文化休闲板鞋 X(E2D0)"
+       data-sku="" data-sizes="" data-msg="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1米白Nike蓝 低帮文化休闲板鞋 X(E2D0)
+图片: https://fzbn168-spec.github.io/AIF-Sports/gallery/img/416972204a6f7264616e_532_Travis_Scott_x_Fragment_Design_x_A.jpg"
+       data-search=" travis scott x fragment design x air jordan 1 low og sp aj1 乔1米白nike蓝 低帮文化休闲板鞋 x(e2d0)">
+    <img loading="lazy" src="img_t/416972204a6f7264616e_532_Travis_Scott_x_Fragment_Design_x_A.jpg" alt="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1米白Nike蓝 低帮文化休闲板鞋 X(E2D0)">
     <div class="meta">
-      <div class="title">Air Jordan 1 Low GS&quot;White/University Red&quot;AJ1乔丹一代低帮经典复古文化休闲运动篮球鞋DC0774-107 尺码：36-46</div>
-      <div class="sku">DC0774-107</div>
-      <div class="sizes">Sizes: EU 36-46</div>
-      <div class="cta">
-        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=DC0774-107%20Air%20Jordan%201%20Low%20GS%22White%2FUniversity%20Red%22AJ1%E4%B9%94%E4%B8%B9%E4%B8%80%E4%BB%A3%E4%BD%8E%E5%B8%AE%E7%BB%8F%E5%85%B8%E5%A4%8D%E5%8F%A4%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E8%BF%90%E5%8A%A8%E7%AF%AE%E7%90%83%E9%9E%8BDC0774-107%20%E5%B0%BA%E7%A0%81%EF%BC%9A36-46%20%28Sizes%3A%20EU%2036-46%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F414a314f4e5e2e209ad85c14592b207cfb521720_004_Air_Jordan_1_Low_GS_White_Universi.jpg">WhatsApp</a>
-        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=DC0774-107%20Air%20Jordan%201%20Low%20GS%22White%2FUniversity%20Red%22AJ1%E4%B9%94%E4%B8%B9%E4%B8%80%E4%BB%A3%E4%BD%8E%E5%B8%AE%E7%BB%8F%E5%85%B8%E5%A4%8D%E5%8F%A4%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E8%BF%90%E5%8A%A8%E7%AF%AE%E7%90%83%E9%9E%8BDC0774-107%20%E5%B0%BA%E7%A0%81%EF%BC%9A36-46%20%28Sizes%3A%20EU%2036-46%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F414a314f4e5e2e209ad85c14592b207cfb521720_004_Air_Jordan_1_Low_GS_White_Universi.jpg">Email</a>
-      </div>
-    </div>
-  </div>
-  <div class="card" data-img="img/414a314f4e5e2e209ad85c14592b207cfb521720_005_Air_Jordan_1_Low_Method_of_Make_.jpg" data-title="Air Jordan 1 Low &quot;Method of Make&quot; AJ1 乔1低帮文化休闲鞋 编码: IB7012-600 口红印花 Size :36/46"
-       data-sku="IB7012-600" data-sizes="" data-msg="IB7012-600 Air Jordan 1 Low &quot;Method of Make&quot; AJ1 乔1低帮文化休闲鞋 编码: IB7012-600 口红印花 Size :36/46
-图片: https://fzbn168-spec.github.io/AIF-Sports/img/414a314f4e5e2e209ad85c14592b207cfb521720_005_Air_Jordan_1_Low_Method_of_Make_.jpg"
-       data-search="ib7012-600 air jordan 1 low &quot;method of make&quot; aj1 乔1低帮文化休闲鞋 编码: ib7012-600 口红印花 size :36/46">
-    <img loading="lazy" src="img_t/414a314f4e5e2e209ad85c14592b207cfb521720_005_Air_Jordan_1_Low_Method_of_Make_.jpg" alt="Air Jordan 1 Low &quot;Method of Make&quot; AJ1 乔1低帮文化休闲鞋 编码: IB7012-600 口红印花 Size :36/46">
-    <div class="meta">
-      <div class="title">Air Jordan 1 Low &quot;Method of Make&quot; AJ1 乔1低帮文化休闲鞋 编码: IB7012-600 口红印花 Size :36/46</div>
-      <div class="sku">IB7012-600</div>
+      <div class="title">Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1米白Nike蓝 低帮文化休闲板鞋 X(E2D0)</div>
+      
       
       <div class="cta">
-        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=IB7012-600%20Air%20Jordan%201%20Low%20%22Method%20of%20Make%22%20AJ1%20%E4%B9%941%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E9%9E%8B%20%E7%BC%96%E7%A0%81%3A%20IB7012-600%20%E5%8F%A3%E7%BA%A2%E5%8D%B0%E8%8A%B1%20Size%20%3A36%2F46%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F414a314f4e5e2e209ad85c14592b207cfb521720_005_Air_Jordan_1_Low_Method_of_Make_.jpg">WhatsApp</a>
-        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=IB7012-600%20Air%20Jordan%201%20Low%20%22Method%20of%20Make%22%20AJ1%20%E4%B9%941%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E9%9E%8B%20%E7%BC%96%E7%A0%81%3A%20IB7012-600%20%E5%8F%A3%E7%BA%A2%E5%8D%B0%E8%8A%B1%20Size%20%3A36%2F46%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F414a314f4e5e2e209ad85c14592b207cfb521720_005_Air_Jordan_1_Low_Method_of_Make_.jpg">Email</a>
+        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E4%B9%941%E7%B1%B3%E7%99%BDNike%E8%93%9D%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E6%9D%BF%E9%9E%8B%20X%28E2D0%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_532_Travis_Scott_x_Fragment_Design_x_A.jpg">WhatsApp</a>
+        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E4%B9%941%E7%B1%B3%E7%99%BDNike%E8%93%9D%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E6%9D%BF%E9%9E%8B%20X%28E2D0%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_532_Travis_Scott_x_Fragment_Design_x_A.jpg">Email</a>
       </div>
     </div>
   </div>
-  <div class="card" data-img="img/414a314f4e5e2e209ad85c14592b207cfb521720_006_Air_Jordan_1_Low_Method_of_Make_.jpg" data-title="Air Jordan 1 Low &quot;Method of Make&quot; AJ1 乔1低帮文化休闲鞋 编码: DC0774-108 白蓝绿 Size :36/46"
-       data-sku="DC0774-108" data-sizes="" data-msg="DC0774-108 Air Jordan 1 Low &quot;Method of Make&quot; AJ1 乔1低帮文化休闲鞋 编码: DC0774-108 白蓝绿 Size :36/46
-图片: https://fzbn168-spec.github.io/AIF-Sports/img/414a314f4e5e2e209ad85c14592b207cfb521720_006_Air_Jordan_1_Low_Method_of_Make_.jpg"
-       data-search="dc0774-108 air jordan 1 low &quot;method of make&quot; aj1 乔1低帮文化休闲鞋 编码: dc0774-108 白蓝绿 size :36/46">
-    <img loading="lazy" src="img_t/414a314f4e5e2e209ad85c14592b207cfb521720_006_Air_Jordan_1_Low_Method_of_Make_.jpg" alt="Air Jordan 1 Low &quot;Method of Make&quot; AJ1 乔1低帮文化休闲鞋 编码: DC0774-108 白蓝绿 Size :36/46">
+  <div class="card" data-img="img/416972204a6f7264616e_533_Travis_Scott_x_Fragment_Design_x_A.jpg" data-title="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1马年联名 黑红马年 低帮文化休闲板鞋(4B59)"
+       data-sku="" data-sizes="" data-msg="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1马年联名 黑红马年 低帮文化休闲板鞋(4B59)
+图片: https://fzbn168-spec.github.io/AIF-Sports/gallery/img/416972204a6f7264616e_533_Travis_Scott_x_Fragment_Design_x_A.jpg"
+       data-search=" travis scott x fragment design x air jordan 1 low og sp aj1 乔1马年联名 黑红马年 低帮文化休闲板鞋(4b59)">
+    <img loading="lazy" src="img_t/416972204a6f7264616e_533_Travis_Scott_x_Fragment_Design_x_A.jpg" alt="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1马年联名 黑红马年 低帮文化休闲板鞋(4B59)">
     <div class="meta">
-      <div class="title">Air Jordan 1 Low &quot;Method of Make&quot; AJ1 乔1低帮文化休闲鞋 编码: DC0774-108 白蓝绿 Size :36/46</div>
-      <div class="sku">DC0774-108</div>
+      <div class="title">Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1马年联名 黑红马年 低帮文化休闲板鞋(4B59)</div>
+      
       
       <div class="cta">
-        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=DC0774-108%20Air%20Jordan%201%20Low%20%22Method%20of%20Make%22%20AJ1%20%E4%B9%941%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E9%9E%8B%20%E7%BC%96%E7%A0%81%3A%20DC0774-108%20%E7%99%BD%E8%93%9D%E7%BB%BF%20Size%20%3A36%2F46%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F414a314f4e5e2e209ad85c14592b207cfb521720_006_Air_Jordan_1_Low_Method_of_Make_.jpg">WhatsApp</a>
-        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=DC0774-108%20Air%20Jordan%201%20Low%20%22Method%20of%20Make%22%20AJ1%20%E4%B9%941%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E9%9E%8B%20%E7%BC%96%E7%A0%81%3A%20DC0774-108%20%E7%99%BD%E8%93%9D%E7%BB%BF%20Size%20%3A36%2F46%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F414a314f4e5e2e209ad85c14592b207cfb521720_006_Air_Jordan_1_Low_Method_of_Make_.jpg">Email</a>
+        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E4%B9%941%E9%A9%AC%E5%B9%B4%E8%81%94%E5%90%8D%20%E9%BB%91%E7%BA%A2%E9%A9%AC%E5%B9%B4%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E6%9D%BF%E9%9E%8B%284B59%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_533_Travis_Scott_x_Fragment_Design_x_A.jpg">WhatsApp</a>
+        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E4%B9%941%E9%A9%AC%E5%B9%B4%E8%81%94%E5%90%8D%20%E9%BB%91%E7%BA%A2%E9%A9%AC%E5%B9%B4%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E6%9D%BF%E9%9E%8B%284B59%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_533_Travis_Scott_x_Fragment_Design_x_A.jpg">Email</a>
       </div>
     </div>
   </div>
-  <div class="card" data-img="img/414a314f4e5e2e209ad85c14592b207cfb521720_IQ5321-121_Air_Jordan_1_Low_Year_of_the_Hors.jpg" data-title="Air Jordan 1 Low &quot;Year of the Horse&quot; AJ1 乔1马年CNY 限定 低帮复古篮球鞋 货号:IQ5321-121 尺码：36-46"
-       data-sku="IQ5321-121" data-sizes="36-46" data-msg="IQ5321-121 Air Jordan 1 Low &quot;Year of the Horse&quot; AJ1 乔1马年CNY 限定 低帮复古篮球鞋 货号:IQ5321-121 尺码：36-46 (Sizes: EU 36-46)
-图片: https://fzbn168-spec.github.io/AIF-Sports/img/414a314f4e5e2e209ad85c14592b207cfb521720_IQ5321-121_Air_Jordan_1_Low_Year_of_the_Hors.jpg"
-       data-search="iq5321-121 air jordan 1 low &quot;year of the horse&quot; aj1 乔1马年cny 限定 低帮复古篮球鞋 货号:iq5321-121 尺码：36-46">
-    <img loading="lazy" src="img_t/414a314f4e5e2e209ad85c14592b207cfb521720_IQ5321-121_Air_Jordan_1_Low_Year_of_the_Hors.jpg" alt="Air Jordan 1 Low &quot;Year of the Horse&quot; AJ1 乔1马年CNY 限定 低帮复古篮球鞋 货号:IQ5321-121 尺码：36-46">
+  <div class="card" data-img="img/416972204a6f7264616e_534_Travis_Scott_x_Fragment_Design_x_A.jpg" data-title="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1联名黑白 低帮文化休闲板鞋 AC18(4823)"
+       data-sku="" data-sizes="" data-msg="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1联名黑白 低帮文化休闲板鞋 AC18(4823)
+图片: https://fzbn168-spec.github.io/AIF-Sports/gallery/img/416972204a6f7264616e_534_Travis_Scott_x_Fragment_Design_x_A.jpg"
+       data-search=" travis scott x fragment design x air jordan 1 low og sp aj1 乔1联名黑白 低帮文化休闲板鞋 ac18(4823)">
+    <img loading="lazy" src="img_t/416972204a6f7264616e_534_Travis_Scott_x_Fragment_Design_x_A.jpg" alt="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1联名黑白 低帮文化休闲板鞋 AC18(4823)">
     <div class="meta">
-      <div class="title">Air Jordan 1 Low &quot;Year of the Horse&quot; AJ1 乔1马年CNY 限定 低帮复古篮球鞋 货号:IQ5321-121 尺码：36-46</div>
-      <div class="sku">IQ5321-121</div>
-      <div class="sizes">Sizes: EU 36-46</div>
-      <div class="cta">
-        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=IQ5321-121%20Air%20Jordan%201%20Low%20%22Year%20of%20the%20Horse%22%20AJ1%20%E4%B9%941%E9%A9%AC%E5%B9%B4CNY%20%E9%99%90%E5%AE%9A%20%E4%BD%8E%E5%B8%AE%E5%A4%8D%E5%8F%A4%E7%AF%AE%E7%90%83%E9%9E%8B%20%E8%B4%A7%E5%8F%B7%3AIQ5321-121%20%E5%B0%BA%E7%A0%81%EF%BC%9A36-46%20%28Sizes%3A%20EU%2036-46%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F414a314f4e5e2e209ad85c14592b207cfb521720_IQ5321-121_Air_Jordan_1_Low_Year_of_the_Hors.jpg">WhatsApp</a>
-        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=IQ5321-121%20Air%20Jordan%201%20Low%20%22Year%20of%20the%20Horse%22%20AJ1%20%E4%B9%941%E9%A9%AC%E5%B9%B4CNY%20%E9%99%90%E5%AE%9A%20%E4%BD%8E%E5%B8%AE%E5%A4%8D%E5%8F%A4%E7%AF%AE%E7%90%83%E9%9E%8B%20%E8%B4%A7%E5%8F%B7%3AIQ5321-121%20%E5%B0%BA%E7%A0%81%EF%BC%9A36-46%20%28Sizes%3A%20EU%2036-46%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F414a314f4e5e2e209ad85c14592b207cfb521720_IQ5321-121_Air_Jordan_1_Low_Year_of_the_Hors.jpg">Email</a>
-      </div>
-    </div>
-  </div>
-  <div class="card" data-img="img/414a314f4e5e2e209ad85c14592b207cfb521720_IH2309-500_Zion_Williamson_x_Air_Jordan_1_Ret.jpg" data-title="Zion Williamson x Air Jordan 1 Retro Low OG“Voodoo Alternate”巫毒娃娃 货号： IH2309-500 尺码：36-46"
-       data-sku="IH2309-500" data-sizes="36-46" data-msg="IH2309-500 Zion Williamson x Air Jordan 1 Retro Low OG“Voodoo Alternate”巫毒娃娃 货号： IH2309-500 尺码：36-46 (Sizes: EU 36-46)
-图片: https://fzbn168-spec.github.io/AIF-Sports/img/414a314f4e5e2e209ad85c14592b207cfb521720_IH2309-500_Zion_Williamson_x_Air_Jordan_1_Ret.jpg"
-       data-search="ih2309-500 zion williamson x air jordan 1 retro low og“voodoo alternate”巫毒娃娃 货号： ih2309-500 尺码：36-46">
-    <img loading="lazy" src="img_t/414a314f4e5e2e209ad85c14592b207cfb521720_IH2309-500_Zion_Williamson_x_Air_Jordan_1_Ret.jpg" alt="Zion Williamson x Air Jordan 1 Retro Low OG“Voodoo Alternate”巫毒娃娃 货号： IH2309-500 尺码：36-46">
-    <div class="meta">
-      <div class="title">Zion Williamson x Air Jordan 1 Retro Low OG“Voodoo Alternate”巫毒娃娃 货号： IH2309-500 尺码：36-46</div>
-      <div class="sku">IH2309-500</div>
-      <div class="sizes">Sizes: EU 36-46</div>
-      <div class="cta">
-        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=IH2309-500%20Zion%20Williamson%20x%20Air%20Jordan%201%20Retro%20Low%20OG%E2%80%9CVoodoo%20Alternate%E2%80%9D%E5%B7%AB%E6%AF%92%E5%A8%83%E5%A8%83%20%E8%B4%A7%E5%8F%B7%EF%BC%9A%20IH2309-500%20%E5%B0%BA%E7%A0%81%EF%BC%9A36-46%20%28Sizes%3A%20EU%2036-46%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F414a314f4e5e2e209ad85c14592b207cfb521720_IH2309-500_Zion_Williamson_x_Air_Jordan_1_Ret.jpg">WhatsApp</a>
-        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=IH2309-500%20Zion%20Williamson%20x%20Air%20Jordan%201%20Retro%20Low%20OG%E2%80%9CVoodoo%20Alternate%E2%80%9D%E5%B7%AB%E6%AF%92%E5%A8%83%E5%A8%83%20%E8%B4%A7%E5%8F%B7%EF%BC%9A%20IH2309-500%20%E5%B0%BA%E7%A0%81%EF%BC%9A36-46%20%28Sizes%3A%20EU%2036-46%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F414a314f4e5e2e209ad85c14592b207cfb521720_IH2309-500_Zion_Williamson_x_Air_Jordan_1_Ret.jpg">Email</a>
-      </div>
-    </div>
-  </div>
-  <div class="card" data-img="img/414a314f4e5e2e209ad85c14592b207cfb521720_009_Air_Jordan_1_Low_Blue_Chill_AJ1%E4%B9%94%E4%B8%B9%E4%B8%80.jpg" data-title="Air Jordan 1 Low&quot;Blue Chill&quot;AJ1乔丹一代低帮经典复古文化休闲运动篮球鞋“黑曜石蓝白蓝”553558-149 尺码：36 -46"
-       data-sku="553558-149" data-sizes="36 -46" data-msg="553558-149 Air Jordan 1 Low&quot;Blue Chill&quot;AJ1乔丹一代低帮经典复古文化休闲运动篮球鞋“黑曜石蓝白蓝”553558-149 尺码：36 -46 (Sizes: EU 36 -46)
-图片: https://fzbn168-spec.github.io/AIF-Sports/img/414a314f4e5e2e209ad85c14592b207cfb521720_009_Air_Jordan_1_Low_Blue_Chill_AJ1乔丹一.jpg"
-       data-search="553558-149 air jordan 1 low&quot;blue chill&quot;aj1乔丹一代低帮经典复古文化休闲运动篮球鞋“黑曜石蓝白蓝”553558-149 尺码：36 -46">
-    <img loading="lazy" src="img_t/414a314f4e5e2e209ad85c14592b207cfb521720_009_Air_Jordan_1_Low_Blue_Chill_AJ1%E4%B9%94%E4%B8%B9%E4%B8%80.jpg" alt="Air Jordan 1 Low&quot;Blue Chill&quot;AJ1乔丹一代低帮经典复古文化休闲运动篮球鞋“黑曜石蓝白蓝”553558-149 尺码：36 -46">
-    <div class="meta">
-      <div class="title">Air Jordan 1 Low&quot;Blue Chill&quot;AJ1乔丹一代低帮经典复古文化休闲运动篮球鞋“黑曜石蓝白蓝”553558-149 尺码：36 -46</div>
-      <div class="sku">553558-149</div>
-      <div class="sizes">Sizes: EU 36 -46</div>
-      <div class="cta">
-        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=553558-149%20Air%20Jordan%201%20Low%22Blue%20Chill%22AJ1%E4%B9%94%E4%B8%B9%E4%B8%80%E4%BB%A3%E4%BD%8E%E5%B8%AE%E7%BB%8F%E5%85%B8%E5%A4%8D%E5%8F%A4%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E8%BF%90%E5%8A%A8%E7%AF%AE%E7%90%83%E9%9E%8B%E2%80%9C%E9%BB%91%E6%9B%9C%E7%9F%B3%E8%93%9D%E7%99%BD%E8%93%9D%E2%80%9D553558-149%20%E5%B0%BA%E7%A0%81%EF%BC%9A36%20-46%20%28Sizes%3A%20EU%2036%20-46%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F414a314f4e5e2e209ad85c14592b207cfb521720_009_Air_Jordan_1_Low_Blue_Chill_AJ1%E4%B9%94%E4%B8%B9%E4%B8%80.jpg">WhatsApp</a>
-        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=553558-149%20Air%20Jordan%201%20Low%22Blue%20Chill%22AJ1%E4%B9%94%E4%B8%B9%E4%B8%80%E4%BB%A3%E4%BD%8E%E5%B8%AE%E7%BB%8F%E5%85%B8%E5%A4%8D%E5%8F%A4%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E8%BF%90%E5%8A%A8%E7%AF%AE%E7%90%83%E9%9E%8B%E2%80%9C%E9%BB%91%E6%9B%9C%E7%9F%B3%E8%93%9D%E7%99%BD%E8%93%9D%E2%80%9D553558-149%20%E5%B0%BA%E7%A0%81%EF%BC%9A36%20-46%20%28Sizes%3A%20EU%2036%20-46%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F414a314f4e5e2e209ad85c14592b207cfb521720_009_Air_Jordan_1_Low_Blue_Chill_AJ1%E4%B9%94%E4%B8%B9%E4%B8%80.jpg">Email</a>
-      </div>
-    </div>
-  </div>
-  <div class="card" data-img="img/414a314f4e5e2e209ad85c14592b207cfb521720_DC0774-138_Air_Jordan_1_Low_Blue_Chill_AJ1%E4%B9%94%E4%B8%B9%E4%B8%80.jpg" data-title="Air Jordan 1 Low&quot;Blue Chill&quot;AJ1乔丹一代低帮经典复古文化休闲运动篮球鞋 货号：DC0774-138         码数：36-46"
-       data-sku="DC0774-138" data-sizes="36-46" data-msg="DC0774-138 Air Jordan 1 Low&quot;Blue Chill&quot;AJ1乔丹一代低帮经典复古文化休闲运动篮球鞋 货号：DC0774-138         码数：36-46 (Sizes: EU 36-46)
-图片: https://fzbn168-spec.github.io/AIF-Sports/img/414a314f4e5e2e209ad85c14592b207cfb521720_DC0774-138_Air_Jordan_1_Low_Blue_Chill_AJ1乔丹一.jpg"
-       data-search="dc0774-138 air jordan 1 low&quot;blue chill&quot;aj1乔丹一代低帮经典复古文化休闲运动篮球鞋 货号：dc0774-138         码数：36-46">
-    <img loading="lazy" src="img_t/414a314f4e5e2e209ad85c14592b207cfb521720_DC0774-138_Air_Jordan_1_Low_Blue_Chill_AJ1%E4%B9%94%E4%B8%B9%E4%B8%80.jpg" alt="Air Jordan 1 Low&quot;Blue Chill&quot;AJ1乔丹一代低帮经典复古文化休闲运动篮球鞋 货号：DC0774-138         码数：36-46">
-    <div class="meta">
-      <div class="title">Air Jordan 1 Low&quot;Blue Chill&quot;AJ1乔丹一代低帮经典复古文化休闲运动篮球鞋 货号：DC0774-138         码数：36-46</div>
-      <div class="sku">DC0774-138</div>
-      <div class="sizes">Sizes: EU 36-46</div>
-      <div class="cta">
-        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=DC0774-138%20Air%20Jordan%201%20Low%22Blue%20Chill%22AJ1%E4%B9%94%E4%B8%B9%E4%B8%80%E4%BB%A3%E4%BD%8E%E5%B8%AE%E7%BB%8F%E5%85%B8%E5%A4%8D%E5%8F%A4%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E8%BF%90%E5%8A%A8%E7%AF%AE%E7%90%83%E9%9E%8B%20%E8%B4%A7%E5%8F%B7%EF%BC%9ADC0774-138%20%20%20%20%20%20%20%20%20%E7%A0%81%E6%95%B0%EF%BC%9A36-46%20%28Sizes%3A%20EU%2036-46%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F414a314f4e5e2e209ad85c14592b207cfb521720_DC0774-138_Air_Jordan_1_Low_Blue_Chill_AJ1%E4%B9%94%E4%B8%B9%E4%B8%80.jpg">WhatsApp</a>
-        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=DC0774-138%20Air%20Jordan%201%20Low%22Blue%20Chill%22AJ1%E4%B9%94%E4%B8%B9%E4%B8%80%E4%BB%A3%E4%BD%8E%E5%B8%AE%E7%BB%8F%E5%85%B8%E5%A4%8D%E5%8F%A4%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E8%BF%90%E5%8A%A8%E7%AF%AE%E7%90%83%E9%9E%8B%20%E8%B4%A7%E5%8F%B7%EF%BC%9ADC0774-138%20%20%20%20%20%20%20%20%20%E7%A0%81%E6%95%B0%EF%BC%9A36-46%20%28Sizes%3A%20EU%2036-46%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F414a314f4e5e2e209ad85c14592b207cfb521720_DC0774-138_Air_Jordan_1_Low_Blue_Chill_AJ1%E4%B9%94%E4%B8%B9%E4%B8%80.jpg">Email</a>
-      </div>
-    </div>
-  </div>
-  <div class="card" data-img="img/414a314f4e5e2e209ad85c14592b207cfb521720_IB8958-001_Nigel_Sylvester_x_Air_Jordan_1_Low.jpg" data-title="Nigel Sylvester x Air Jordan 1 Low OG Nitro &quot;Better With Time&quot; 低帮 黑白红 货号：IB8958-001 Size:36-46"
-       data-sku="IB8958-001" data-sizes="" data-msg="IB8958-001 Nigel Sylvester x Air Jordan 1 Low OG Nitro &quot;Better With Time&quot; 低帮 黑白红 货号：IB8958-001 Size:36-46
-图片: https://fzbn168-spec.github.io/AIF-Sports/img/414a314f4e5e2e209ad85c14592b207cfb521720_IB8958-001_Nigel_Sylvester_x_Air_Jordan_1_Low.jpg"
-       data-search="ib8958-001 nigel sylvester x air jordan 1 low og nitro &quot;better with time&quot; 低帮 黑白红 货号：ib8958-001 size:36-46">
-    <img loading="lazy" src="img_t/414a314f4e5e2e209ad85c14592b207cfb521720_IB8958-001_Nigel_Sylvester_x_Air_Jordan_1_Low.jpg" alt="Nigel Sylvester x Air Jordan 1 Low OG Nitro &quot;Better With Time&quot; 低帮 黑白红 货号：IB8958-001 Size:36-46">
-    <div class="meta">
-      <div class="title">Nigel Sylvester x Air Jordan 1 Low OG Nitro &quot;Better With Time&quot; 低帮 黑白红 货号：IB8958-001 Size:36-46</div>
-      <div class="sku">IB8958-001</div>
+      <div class="title">Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1联名黑白 低帮文化休闲板鞋 AC18(4823)</div>
+      
       
       <div class="cta">
-        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=IB8958-001%20Nigel%20Sylvester%20x%20Air%20Jordan%201%20Low%20OG%20Nitro%20%22Better%20With%20Time%22%20%E4%BD%8E%E5%B8%AE%20%E9%BB%91%E7%99%BD%E7%BA%A2%20%E8%B4%A7%E5%8F%B7%EF%BC%9AIB8958-001%20Size%3A36-46%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F414a314f4e5e2e209ad85c14592b207cfb521720_IB8958-001_Nigel_Sylvester_x_Air_Jordan_1_Low.jpg">WhatsApp</a>
-        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=IB8958-001%20Nigel%20Sylvester%20x%20Air%20Jordan%201%20Low%20OG%20Nitro%20%22Better%20With%20Time%22%20%E4%BD%8E%E5%B8%AE%20%E9%BB%91%E7%99%BD%E7%BA%A2%20%E8%B4%A7%E5%8F%B7%EF%BC%9AIB8958-001%20Size%3A36-46%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fimg%2F414a314f4e5e2e209ad85c14592b207cfb521720_IB8958-001_Nigel_Sylvester_x_Air_Jordan_1_Low.jpg">Email</a>
+        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E4%B9%941%E8%81%94%E5%90%8D%E9%BB%91%E7%99%BD%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E6%9D%BF%E9%9E%8B%20AC18%284823%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_534_Travis_Scott_x_Fragment_Design_x_A.jpg">WhatsApp</a>
+        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E4%B9%941%E8%81%94%E5%90%8D%E9%BB%91%E7%99%BD%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E6%9D%BF%E9%9E%8B%20AC18%284823%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_534_Travis_Scott_x_Fragment_Design_x_A.jpg">Email</a>
+      </div>
+    </div>
+  </div>
+  <div class="card" data-img="img/416972204a6f7264616e_535_Travis_Scott_x_Fragment_Design_x_A.jpg" data-title="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1联名 午夜蓝 低帮文化休闲板鞋 XX(356D)"
+       data-sku="" data-sizes="" data-msg="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1联名 午夜蓝 低帮文化休闲板鞋 XX(356D)
+图片: https://fzbn168-spec.github.io/AIF-Sports/gallery/img/416972204a6f7264616e_535_Travis_Scott_x_Fragment_Design_x_A.jpg"
+       data-search=" travis scott x fragment design x air jordan 1 low og sp aj1 乔1联名 午夜蓝 低帮文化休闲板鞋 xx(356d)">
+    <img loading="lazy" src="img_t/416972204a6f7264616e_535_Travis_Scott_x_Fragment_Design_x_A.jpg" alt="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1联名 午夜蓝 低帮文化休闲板鞋 XX(356D)">
+    <div class="meta">
+      <div class="title">Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1联名 午夜蓝 低帮文化休闲板鞋 XX(356D)</div>
+      
+      
+      <div class="cta">
+        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E4%B9%941%E8%81%94%E5%90%8D%20%E5%8D%88%E5%A4%9C%E8%93%9D%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E6%9D%BF%E9%9E%8B%20XX%28356D%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_535_Travis_Scott_x_Fragment_Design_x_A.jpg">WhatsApp</a>
+        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E4%B9%941%E8%81%94%E5%90%8D%20%E5%8D%88%E5%A4%9C%E8%93%9D%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E6%9D%BF%E9%9E%8B%20XX%28356D%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_535_Travis_Scott_x_Fragment_Design_x_A.jpg">Email</a>
+      </div>
+    </div>
+  </div>
+  <div class="card" data-img="img/416972204a6f7264616e_536_Travis_Scott_x_Fragment_Design_x_A.jpg" data-title="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1联名 天蓝灰布印花 低帮文化休闲板鞋(70E4)"
+       data-sku="" data-sizes="" data-msg="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1联名 天蓝灰布印花 低帮文化休闲板鞋(70E4)
+图片: https://fzbn168-spec.github.io/AIF-Sports/gallery/img/416972204a6f7264616e_536_Travis_Scott_x_Fragment_Design_x_A.jpg"
+       data-search=" travis scott x fragment design x air jordan 1 low og sp aj1 乔1联名 天蓝灰布印花 低帮文化休闲板鞋(70e4)">
+    <img loading="lazy" src="img_t/416972204a6f7264616e_536_Travis_Scott_x_Fragment_Design_x_A.jpg" alt="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1联名 天蓝灰布印花 低帮文化休闲板鞋(70E4)">
+    <div class="meta">
+      <div class="title">Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1联名 天蓝灰布印花 低帮文化休闲板鞋(70E4)</div>
+      
+      
+      <div class="cta">
+        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E4%B9%941%E8%81%94%E5%90%8D%20%E5%A4%A9%E8%93%9D%E7%81%B0%E5%B8%83%E5%8D%B0%E8%8A%B1%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E6%9D%BF%E9%9E%8B%2870E4%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_536_Travis_Scott_x_Fragment_Design_x_A.jpg">WhatsApp</a>
+        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E4%B9%941%E8%81%94%E5%90%8D%20%E5%A4%A9%E8%93%9D%E7%81%B0%E5%B8%83%E5%8D%B0%E8%8A%B1%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E6%9D%BF%E9%9E%8B%2870E4%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_536_Travis_Scott_x_Fragment_Design_x_A.jpg">Email</a>
+      </div>
+    </div>
+  </div>
+  <div class="card" data-img="img/416972204a6f7264616e_537_Travis_Scott_x_Fragment_Design_x_A.jpg" data-title="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1联名 奶白灰蓝 低帮文化休闲板鞋 X(F709)"
+       data-sku="" data-sizes="" data-msg="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1联名 奶白灰蓝 低帮文化休闲板鞋 X(F709)
+图片: https://fzbn168-spec.github.io/AIF-Sports/gallery/img/416972204a6f7264616e_537_Travis_Scott_x_Fragment_Design_x_A.jpg"
+       data-search=" travis scott x fragment design x air jordan 1 low og sp aj1 乔1联名 奶白灰蓝 低帮文化休闲板鞋 x(f709)">
+    <img loading="lazy" src="img_t/416972204a6f7264616e_537_Travis_Scott_x_Fragment_Design_x_A.jpg" alt="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1联名 奶白灰蓝 低帮文化休闲板鞋 X(F709)">
+    <div class="meta">
+      <div class="title">Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1联名 奶白灰蓝 低帮文化休闲板鞋 X(F709)</div>
+      
+      
+      <div class="cta">
+        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E4%B9%941%E8%81%94%E5%90%8D%20%E5%A5%B6%E7%99%BD%E7%81%B0%E8%93%9D%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E6%9D%BF%E9%9E%8B%20X%28F709%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_537_Travis_Scott_x_Fragment_Design_x_A.jpg">WhatsApp</a>
+        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E4%B9%941%E8%81%94%E5%90%8D%20%E5%A5%B6%E7%99%BD%E7%81%B0%E8%93%9D%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E6%9D%BF%E9%9E%8B%20X%28F709%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_537_Travis_Scott_x_Fragment_Design_x_A.jpg">Email</a>
+      </div>
+    </div>
+  </div>
+  <div class="card" data-img="img/416972204a6f7264616e_538_Travis_Scott_x_Fragment_Design_x_A.jpg" data-title="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1联名 米蓝牛仔布 低帮文化休闲板鞋(5B5D)"
+       data-sku="" data-sizes="" data-msg="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1联名 米蓝牛仔布 低帮文化休闲板鞋(5B5D)
+图片: https://fzbn168-spec.github.io/AIF-Sports/gallery/img/416972204a6f7264616e_538_Travis_Scott_x_Fragment_Design_x_A.jpg"
+       data-search=" travis scott x fragment design x air jordan 1 low og sp aj1 乔1联名 米蓝牛仔布 低帮文化休闲板鞋(5b5d)">
+    <img loading="lazy" src="img_t/416972204a6f7264616e_538_Travis_Scott_x_Fragment_Design_x_A.jpg" alt="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1联名 米蓝牛仔布 低帮文化休闲板鞋(5B5D)">
+    <div class="meta">
+      <div class="title">Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1联名 米蓝牛仔布 低帮文化休闲板鞋(5B5D)</div>
+      
+      
+      <div class="cta">
+        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E4%B9%941%E8%81%94%E5%90%8D%20%E7%B1%B3%E8%93%9D%E7%89%9B%E4%BB%94%E5%B8%83%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E6%9D%BF%E9%9E%8B%285B5D%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_538_Travis_Scott_x_Fragment_Design_x_A.jpg">WhatsApp</a>
+        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E4%B9%941%E8%81%94%E5%90%8D%20%E7%B1%B3%E8%93%9D%E7%89%9B%E4%BB%94%E5%B8%83%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E6%9D%BF%E9%9E%8B%285B5D%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_538_Travis_Scott_x_Fragment_Design_x_A.jpg">Email</a>
+      </div>
+    </div>
+  </div>
+  <div class="card" data-img="img/416972204a6f7264616e_539_Travis_Scott_x_Fragment_Design_x_A.jpg" data-title="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1联名 米黑线小红勾 低帮文化休闲板鞋(19D3)"
+       data-sku="" data-sizes="" data-msg="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1联名 米黑线小红勾 低帮文化休闲板鞋(19D3)
+图片: https://fzbn168-spec.github.io/AIF-Sports/gallery/img/416972204a6f7264616e_539_Travis_Scott_x_Fragment_Design_x_A.jpg"
+       data-search=" travis scott x fragment design x air jordan 1 low og sp aj1 乔1联名 米黑线小红勾 低帮文化休闲板鞋(19d3)">
+    <img loading="lazy" src="img_t/416972204a6f7264616e_539_Travis_Scott_x_Fragment_Design_x_A.jpg" alt="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1联名 米黑线小红勾 低帮文化休闲板鞋(19D3)">
+    <div class="meta">
+      <div class="title">Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1联名 米黑线小红勾 低帮文化休闲板鞋(19D3)</div>
+      
+      
+      <div class="cta">
+        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E4%B9%941%E8%81%94%E5%90%8D%20%E7%B1%B3%E9%BB%91%E7%BA%BF%E5%B0%8F%E7%BA%A2%E5%8B%BE%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E6%9D%BF%E9%9E%8B%2819D3%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_539_Travis_Scott_x_Fragment_Design_x_A.jpg">WhatsApp</a>
+        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E4%B9%941%E8%81%94%E5%90%8D%20%E7%B1%B3%E9%BB%91%E7%BA%BF%E5%B0%8F%E7%BA%A2%E5%8B%BE%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E6%9D%BF%E9%9E%8B%2819D3%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_539_Travis_Scott_x_Fragment_Design_x_A.jpg">Email</a>
+      </div>
+    </div>
+  </div>
+  <div class="card" data-img="img/416972204a6f7264616e_540_Travis_Scott_x_Fragment_Design_x_A.jpg" data-title="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1联名 米黑牛仔 低帮文化休闲板鞋 C(DEF0)"
+       data-sku="" data-sizes="" data-msg="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1联名 米黑牛仔 低帮文化休闲板鞋 C(DEF0)
+图片: https://fzbn168-spec.github.io/AIF-Sports/gallery/img/416972204a6f7264616e_540_Travis_Scott_x_Fragment_Design_x_A.jpg"
+       data-search=" travis scott x fragment design x air jordan 1 low og sp aj1 乔1联名 米黑牛仔 低帮文化休闲板鞋 c(def0)">
+    <img loading="lazy" src="img_t/416972204a6f7264616e_540_Travis_Scott_x_Fragment_Design_x_A.jpg" alt="Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1联名 米黑牛仔 低帮文化休闲板鞋 C(DEF0)">
+    <div class="meta">
+      <div class="title">Travis Scott x Fragment Design x Air Jordan 1 Low OG SP AJ1 乔1联名 米黑牛仔 低帮文化休闲板鞋 C(DEF0)</div>
+      
+      
+      <div class="cta">
+        <a class="wa" target="_blank" rel="noopener" href="https://wa.me/8618650352529?text=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E4%B9%941%E8%81%94%E5%90%8D%20%E7%B1%B3%E9%BB%91%E7%89%9B%E4%BB%94%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E6%9D%BF%E9%9E%8B%20C%28DEF0%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_540_Travis_Scott_x_Fragment_Design_x_A.jpg">WhatsApp</a>
+        <a class="mail" target="_blank" rel="noopener" href="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&body=Travis%20Scott%20x%20Fragment%20Design%20x%20Air%20Jordan%201%20Low%20OG%20SP%20AJ1%20%E4%B9%941%E8%81%94%E5%90%8D%20%E7%B1%B3%E9%BB%91%E7%89%9B%E4%BB%94%20%E4%BD%8E%E5%B8%AE%E6%96%87%E5%8C%96%E4%BC%91%E9%97%B2%E6%9D%BF%E9%9E%8B%20C%28DEF0%29%0A%E5%9B%BE%E7%89%87%3A%20https%3A%2F%2Ffzbn168-spec.github.io%2FAIF-Sports%2Fgallery%2Fimg%2F416972204a6f7264616e_540_Travis_Scott_x_Fragment_Design_x_A.jpg">Email</a>
       </div>
     </div>
   </div></div>
     <div class="res" id="res"></div>
-    <div class="pager" id="pager"><a href="index_17.html">‹ 上一页</a><span class="info">第 18 / 89 页</span><a href="index.html">1</a><span>…</span><a href="index_16.html">16</a><a href="index_17.html">17</a><span class="page cur">18</span><a href="index_19.html">19</a><a href="index_20.html">20</a><span>…</span><a href="index_89.html">89</a><a href="index_19.html">下一页 ›</a></div>
+    <div class="pager" id="pager"><a href="index_17.html">‹ 上一页</a><span class="info">第 18 / 1297 页</span><a href="index.html">1</a><span>…</span><a href="index_16.html">16</a><a href="index_17.html">17</a><span class="page cur">18</span><a href="index_19.html">19</a><a href="index_20.html">20</a><span>…</span><a href="index_1297.html">1297</a><a href="index_19.html">下一页 ›</a></div>
   </main>
 </div>
 <div class="lightbox" id="lb">
@@ -531,13 +536,13 @@ a{text-decoration:none;color:inherit}
   <div class="lb-meta">
     <div class="lb-title" id="lbTitle"></div>
     <div class="lb-sub" id="lbSub"></div>
-    <div class="lb-cta"><a class="wa" id="lbCta" target="_blank" rel="noopener" style="background:#25d366;color:#fff" data-wa="https://wa.me/8618650352529?text=" data-mail="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&amp;body=" data-site="https://fzbn168-spec.github.io/AIF-Sports">WhatsApp 询单</a>
+    <div class="lb-cta"><a class="wa" id="lbCta" target="_blank" rel="noopener" style="background:#25d366;color:#fff" data-wa="https://wa.me/8618650352529?text=" data-mail="mailto:fzxr2030@outlook.com?subject=Order%20Inquiry&amp;body=" data-site="https://fzbn168-spec.github.io/AIF-Sports/gallery">WhatsApp 询单</a>
       <a class="mail" id="lbCtaMail" target="_blank" rel="noopener" style="background:#eef1f5;color:#1c2333">Email 询单</a></div>
   </div>
 </div>
 <div class="foot">AIF Sports · 所有商品以实际库存为准 · 询单请提供货号</div>
 <script src="search.js"></script>
-<script>// gallery site logic
+<script>// gallery site v2 logic
 (function(){
   var lb=document.getElementById('lb');
   var lbImg=document.getElementById('lbImg');
