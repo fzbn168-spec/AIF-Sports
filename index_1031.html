@@ -31,8 +31,10 @@ a{text-decoration:none;color:inherit}
 .sidebar .grp.active{color:var(--accent)}
 .main{flex:1;min-width:0;padding:16px 20px 60px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}
-.res{display:none}
-.res .tip{font-size:13px;color:var(--sub);margin-bottom:12px}
+.res{display:none;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}
+.res.on{display:grid}
+.res .tip{font-size:13px;color:var(--sub);margin-bottom:12px;grid-column:1/-1}
+.pager .dots{color:var(--sub);padding:0 2px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;cursor:pointer;transition:transform .15s,box-shadow .15s}
 .card:hover{transform:translateY(-3px);box-shadow:0 8px 22px rgba(28,35,51,.10)}
 .card img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;background:#eef0f3;cursor:zoom-in}
@@ -63,7 +65,7 @@ a{text-decoration:none;color:inherit}
 .lightbox .close:hover{opacity:1}
 .empty{padding:80px 20px;text-align:center;color:var(--sub);font-size:14px}
 .foot{text-align:center;color:var(--sub);font-size:12px;padding:30px 20px 40px}
-@media(max-width:760px){.sidebar{display:none}.catebar{display:block}.wrap{flex-direction:column}.search{flex:1}.grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}}
+@media(max-width:760px){.sidebar{display:none}.catebar{display:block}.wrap{flex-direction:column}.search{flex:1}.grid,.res.on{grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}}
 </style>
 </head>
 <body>
@@ -527,6 +529,7 @@ a{text-decoration:none;color:inherit}
     </div>
   </div></div>
     <div class="res" id="res"></div>
+    <div class="pager" id="spager" style="display:none"></div>
     <div class="pager" id="pager"><a href="index_1030.html">‹ 上一页</a><span class="info">第 1031 / 1297 页</span><a href="index.html">1</a><span>…</span><a href="index_1029.html">1029</a><a href="index_1030.html">1030</a><span class="page cur">1031</span><a href="index_1032.html">1032</a><a href="index_1033.html">1033</a><span>…</span><a href="index_1297.html">1297</a><a href="index_1032.html">下一页 ›</a></div>
   </main>
 </div>
@@ -595,24 +598,58 @@ a{text-decoration:none;color:inherit}
   lb.addEventListener('click',function(e){if(e.target===lb)lb.classList.remove('open');});
   document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.classList.remove('open');});
   var q=document.getElementById('q');
+  var spager=document.getElementById('spager');
+  var PAGE_SIZE=60,searchHits=[],searchPage=1;
+  function renderSearch(){
+    var total=searchHits.length;
+    var pages=Math.max(1,Math.ceil(total/PAGE_SIZE));
+    if(searchPage>pages)searchPage=pages;
+    var start=(searchPage-1)*PAGE_SIZE;
+    var pageHits=searchHits.slice(start,start+PAGE_SIZE);
+    var tip='搜索「'+escHtml(q.value.trim())+'」: 共 '+total+' 个结果';
+    if(pages>1)tip+=' · 第 '+searchPage+'/'+pages+' 页';
+    res.innerHTML='<div class="tip">'+tip+'</div>'+pageHits.map(cardHtml).join('');
+    var ph='';
+    if(pages>1){
+      if(searchPage>1)ph+='<a href="javascript:void(0)" data-p="'+(searchPage-1)+'">« 上一页</a>';
+      var from=Math.max(1,searchPage-2),to=Math.min(pages,searchPage+2);
+      if(from>1)ph+='<span class="dots">…</span>';
+      for(var i=from;i<=to;i++)ph+=(i===searchPage)?'<span class="page cur">'+i+'</span>':'<a href="javascript:void(0)" data-p="'+i+'">'+i+'</a>';
+      if(to<pages)ph+='<span class="dots">…</span>';
+      if(searchPage<pages)ph+='<a href="javascript:void(0)" data-p="'+(searchPage+1)+'">下一页 »</a>';
+    }
+    spager.innerHTML=ph;
+    spager.style.display=pages>1?'flex':'none';
+  }
+  spager.addEventListener('click',function(e){
+    var a=e.target.closest('a[data-p]');
+    if(!a)return;
+    searchPage=parseInt(a.getAttribute('data-p'),10);
+    renderSearch();
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
   if(q){
     q.addEventListener('input',function(){
       var v=q.value.trim().toLowerCase();
       if(!v){
-        res.style.display='none';
+        res.className='res';
+        spager.style.display='none';
         grid.style.display='';
         pager.style.display='';
         return;
       }
       if(!window.__INDEX__)return;
-      var hits=window.__INDEX__.filter(function(r){return (r[1]+' '+r[2]).toLowerCase().indexOf(v)>-1;});
-      var total=hits.length;
-      if(hits.length>150)hits=hits.slice(0,150);
-      res.innerHTML='<div class="tip">搜索「'+escHtml(q.value.trim())+'」: '+total+' 个结果'+(total>150?'，仅显示前 150 个，请补充关键词':'')+'</div>'+
-        hits.map(cardHtml).join('');
-      res.style.display='block';
+      searchHits=window.__INDEX__.filter(function(r){return (r[1]+' '+r[2]).toLowerCase().indexOf(v)>-1;});
+      searchPage=1;
       grid.style.display='none';
       pager.style.display='none';
+      res.className='res on';
+      if(!searchHits.length){
+        res.innerHTML='<div class="tip">搜索「'+escHtml(q.value.trim())+'」: 无匹配结果，换个关键词试试（货号 / 款式 / 颜色）</div>';
+        spager.style.display='none';
+        return;
+      }
+      renderSearch();
     });
   }
 })();
